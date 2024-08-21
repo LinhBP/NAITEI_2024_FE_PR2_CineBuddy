@@ -1,0 +1,276 @@
+{
+  "banners": [
+    {
+      "id": 1,
+      "image": "/images/banner1.png"
+    },
+    {
+      "id": 2,
+      "image": "/images/banner2.jpg"
+    },
+    {
+      "id": 3,
+      "image": "/images/banner3.jpg"
+    },
+    {
+      "id": 4,
+      "image": "/images/banner4.jpg"
+    },
+    {
+      "id": 5,
+      "image": "/images/banner5.jpg"
+    },
+    {
+      "id": 6,
+      "image": "/images/banner6.jpg"
+    },
+    {
+      "id": 7,
+      "image": "/images/banner7.jpg"
+    }
+  ],
+  "movies": [
+    {
+      "id": 1,
+      "title": "movies.MADA.title",
+      "image": "/images/movie1.jpg",
+      "trailer": "vC-KNlLNIso?si=JRnF5HpCXwW7-6u_",
+      "description": "movies.MADA.description",
+      "genre": "movies.MADA.genre",
+      "duration": "movies.MADA.duration",
+      "release_date": "16-08-2024",
+      "like_number": 201,
+      "dangChieu": true,
+      "language": "movies.MADA.language",
+      "rated": "movies.MADA.rated"
+    },
+    {
+      "id": 2,
+      "title": "movies.SHIN_2024.title",
+      "image": "/images/movie2.jpg",
+      "trailer": "LX3vL2OX3g8",
+      "description": "movies.SHIN_2024.description",
+      "genre": "movies.SHIN_2024.genre",
+      "duration": "movies.SHIN_2024.duration",
+      "release_date": "23-08-2024",
+      "like_number": 67,
+      "dangChieu": true,
+      "language": "movies.SHIN_2024.language",
+      "rated": "P"
+    },
+    {
+      "id": 3,
+      "title": "movies.BORDERLANDS.title",
+      "image": "/images/movie3.jpg",
+      "trailer": "nka1WfWcsrQ",
+      "description": "movies.BORDERLANDS.description",
+      "genre": "movies.BORDERLANDS.genre",
+      "duration": "movies.BORDERLANDS.duration",
+      "release_date": "23-08-2024",
+      "like_number": 12,
+      "dangChieu": true,
+      "language": "movies.BORDERLANDS.language",
+      "rated": "T13"
+    },
+    {
+      "id": 4,
+      "title": "movies.REVOLVER.title",
+      "image": "/images/movie4.jpg",
+      "trailer": "3bFZzvWYQbk",
+      "description": "movies.REVOLVER.description",
+      "genre": "movies.REVOLVER.genre",
+      "duration": "movies.REVOLVER.duration",
+      "release_date": "23-08-2024",
+      "like_number": 36,
+      "dangChieu": true,
+      "language": "movies.REVOLVER.language",
+      "rated": "T18"
+    },
+    {
+      "id": 5,
+      "title": "movies.WRONG_SIDE.title",
+      "image": "/images/movie5.jpg",
+      "trailer": "uYYqeEpsV54",
+      "description": "movies.WRONG_SIDE.description",
+      "genre": "movies.WRONG_SIDE.genre",
+      "duration": "movies.WRONG_SIDE.duration",
+      "release_date": "30-08-2024",
+      "like_number": 89,
+      "dangChieu": true,
+      "language": "movies.WRONG_SIDE.language",
+      "rated": "T16"
+    },
+    {
+      "id": 6,
+      "title": "movies.AMDUONGSU.title",
+      "image": "/images/movie6.jpg",
+      "trailer": "SHuITi9LPyE",
+      "description": "movies.AMDUONGSU.description",
+      "genre": "movies.AMDUONGSU.genre",
+      "duration": "movies.AMDUONGSU.duration",
+      "release_date": "01-09-2024",
+      "like_number": 56,
+      "dangChieu": true,
+      "language": "movies.AMDUONGSU.language",
+      "rated": "T13"
+    },
+    {
+      "id": 7,
+      "title": "movies.HAROLD.title",
+      "image": "/images/movie7.jpg",
+      "trailer": "WVtFZIXnv38",
+      "description": "movies.HAROLD.description",
+      "genre": "movies.HAROLD.genre",
+      "duration": "movies.HAROLD.duration",
+      "release_date": "05-09-2024",
+      "like_number": 43,
+      "dangChieu": true,
+      "language": "movies.HAROLD.language",
+      "rated": "P"
+    },
+    {
+      "id": 8,
+      "title": "movies.ROMULUS.title",
+      "image": "/images/movie8.jpg",
+      "trailer": "04b7WWv7JTM",
+      "description": "movies.ROMULUS.description",
+      "genre": "movies.ROMULUS.genre",
+      "duration": "movies.ROMULUS.duration",
+      "release_date": "10-09-2024",
+      "like_number": 19,
+      "dangChieu": true,
+      "language": "movies.ROMULUS.language",
+      "rated": "T18"
+    },
+    {
+      "id": 9,
+      "title": "movies.HAI_MUOI.title",
+      "image": "/images/movie9.jpg",
+      "trailer": "MjxPoqCvvVs",
+      "description": "movies.HAI_MUOI.description",
+      "genre": "movies.HAI_MUOI.genre",
+      "duration": "movies.HAI_MUOI.duration",
+      "release_date": "15-09-2024",
+      "like_number": 72,
+      "sapChieu": true,
+      "language": "movies.HAI_MUOI.language",
+      "rated": "T13"
+    },
+    {
+      "id": 10,
+      "title": "movies.PILOT.title",
+      "image": "/images/movie10.jpg",
+      "trailer": "4n60mgbiiz0",
+      "description": "movies.PILOT.description",
+      "genre": "movies.PILOT.genre",
+      "duration": "movies.PILOT.duration",
+      "release_date": "20-09-2024",
+      "like_number": 33,
+      "sapChieu": true,
+      "language": "movies.PILOT.language",
+      "rated": "P"
+    },
+    {
+      "id": 11,
+      "title": "movies.HELLBOY.title",
+      "image": "/images/movie11.jpg",
+      "trailer": "v9rWm30gjuo",
+      "description": "movies.HELLBOY.description",
+      "genre": "movies.HELLBOY.genre",
+      "duration": "movies.HELLBOY.duration",
+      "release_date": "25-09-2024",
+      "like_number": 91,
+      "sapChieu": true,
+      "language": "movies.HELLBOY.language",
+      "rated": "T18"
+    },
+    {
+      "id": 12,
+      "title": "movies.WOLF.title",
+      "image": "/images/movie12.jpg",
+      "trailer": "4oJRdcgkqA8",
+      "description": "movies.WOLF.description",
+      "genre": "movies.WOLF.genre",
+      "duration": "movies.WOLF.duration",
+      "release_date": "30-09-2024",
+      "like_number": 24,
+      "sapChieu": true,
+      "language": "movies.WOLF.language",
+      "rated": "T16"
+    }
+  ],
+  "leftSmallBanners": [
+    {
+      "id": 1,
+      "image": "/images/left-banner.png"
+    }
+  ],
+  "rightSmallBanners": [
+    {
+      "id": 1,
+      "image": "/images/right-banner.png"
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "image": "/images/event1.jpg"
+    },
+    {
+      "id": 2,
+      "image": "/images/event2.png"
+    },
+    {
+      "id": 3,
+      "image": "/images/event3.png"
+    },
+    {
+      "id": 4,
+      "image": "/images/event4.png"
+    }
+  ],
+  "voucher": [
+    {
+      "id": 1,
+      "image": "/images/event5.png"
+    },
+    {
+      "id": 2,
+      "image": "/images/event6.png"
+    },
+    {
+      "id": 3,
+      "image": "/images/event7.png"
+    },
+    {
+      "id": 4,
+      "image": "/images/event8.png"
+    }
+  ],
+  "services": [
+    {
+      "id": 1,
+      "image": "/images/service1.jpg"
+    },
+    {
+      "id": 2,
+      "image": "/images/service2.png"
+    },
+    {
+      "id": 3,
+      "image": "/images/service3.png"
+    }
+  ],
+  "adBanner": {
+    "id": 1,
+    "image": "https://advserver.cgv.vn/www/images/2692342f3f032527245723b2617336a2.png"
+  },
+  "popupBanner": {
+    "id": 1,
+    "image": "/images/pop-up-banner.jpg"
+  },
+  "gifBanner": {
+    "id": 1,
+    "image": "/images/conanglitter_30_conan.gif"
+  }
+}

@@ -1,0 +1,225 @@
+{
+    "welcome": "Hi",
+    "footer": {
+      "cgv_vietnam": "CGV Vietnam",
+      "intro": "Introduction",
+      "online_services": "Online Services",
+      "gift_card": "Gift Card",
+      "recruitment": "Recruitment",
+      "ad_contact": "Advertise with CGV",
+      "partner": "For Partners",
+      "terms_of_use": "Terms of Use",
+      "general_terms": "General Terms",
+      "transaction_terms": "Transaction Terms",
+      "payment_policy": "Payment Policy",
+      "privacy_policy": "Privacy Policy",
+      "faq": "FAQ",
+      "connect_with_us": "Connect with Us",
+      "customer_service": "Customer Service",
+      "hotline": "Hotline: 1900 6017",
+      "working_hours": "Working hours: 8:00 AM - 10:00 PM (Every day including holidays)",
+      "support_email": "Support Email: hoidap@cgv.vn",
+      "cgv_company_name": "CJ CGV VIETNAM CO., LTD.",
+      "business_registration": "Business Registration Certificate: 0303675393, initially registered on July 31, 2008, issued by the Department of Planning and Investment of Ho Chi Minh City",
+      "address": "Address: 2nd Floor, No. 7/28, Thanh Thai Street, Ward 14, District 10, Ho Chi Minh City, Vietnam",
+      "copyright": "COPYRIGHT 2017 CJ CGV VIETNAM CO., LTD. ALL RIGHTS RESERVED"
+    },
+    "header": {
+      "menu": "Menu",
+      "now_showing": "Now Showing",
+      "coming_soon": "Coming Soon",
+      "new_and_promotion": "New & Promotions",
+      "my_tickets": "My Tickets",
+      "login_register": "LOGIN / REGISTER",
+      "hello": "Hello",
+      "logout": "Logout",
+      "film": "Movies",
+      "cinemas": "Cinemas",
+      "all_cinemas": "All Cinemas",
+      "special_cinemas": "Special Cinemas",
+      "3d_cinemas": "3D Cinemas",
+      "members": "Members",
+      "cgv_account": "CGV Account",
+      "benefits": "Benefits",
+      "cultureplex": "Cultureplex",
+      "online_store": "Online Store",
+      "rent_and_group": "Rent & Group",
+      "e_cgv": "E-CGV",
+      "egift": "EGift",
+      "cgv_rules": "CGV Rules",
+      "language": {
+        "english": "EN",
+        "vietnamese": "VI"
+      }
+    },
+    "breadcrumbs": {
+      "movies": "Movies",
+      "now_showing": "Now Showing",
+      "coming_soon": "Coming Soon"
+    },
+    "now_showing": {
+      "title": "NOW SHOWING",
+      "coming_soon": "COMING SOON"
+    },
+    "genre": "Genre",
+    "duration": "Duration",
+    "release_date": "Release Date",
+    "description": "Description",
+    "language": "Language",
+    "rated": "Rated",
+    "buy_ticket": "BUY TICKET",
+    "details": "Details",
+    "trailer": "Trailer",
+    "movies": {
+      "MADA": {
+        "title": "MA DA",
+        "description": "MA DA is a haunting horror film that delves into the terrifying world of the unknown. As dark secrets unfold, the protagonists find themselves in a life-threatening situation that challenges their sanity.",
+        "genre": "Horror",
+        "duration": "95 minutes",
+        "language": "Vietnamese with English subtitle",
+        "rated": "T16"
+      },
+      "SHIN_2024": {
+        "title": "SHIN CHAN",
+        "description": "Join Shin and his friends on a hilarious and heartwarming adventure in 'Our Dinosaur Diary'. The film combines humor and adventure, making it a perfect family film that appeals to all ages.",
+        "genre": "Family, Comedy",
+        "duration": "105 minutes",
+        "language": "Japanese with English subtitle",
+        "rated": "P"
+      },
+      "BORDERLANDS": {
+        "title": "BORDERLANDS",
+        "description": "Return to Pandora in this epic sci-fi adventure where the stakes are higher than ever. The film blends humor with intense action scenes, taking the audience on a thrilling journey across the galaxy.",
+        "genre": "Comedy, Action",
+        "duration": "101 minutes",
+        "language": "English",
+        "rated": "T13"
+      },
+      "REVOLVER": {
+        "title": "REVOLVER",
+        "description": "Revolver tells the story of a woman’s journey for revenge and justice. With intense action sequences and a gripping storyline, this thriller keeps you on the edge of your seat.",
+        "genre": "Action",
+        "duration": "115 minutes",
+        "language": "English",
+        "rated": "T18"
+      },
+      "WRONG_SIDE": {
+        "title": "WRONG SIDE",
+        "description": "Wrong Side is an intense action thriller that explores the dark side of human nature. The film follows the protagonist as they fight against all odds in a high-stakes battle for survival.",
+        "genre": "Action, Thriller",
+        "duration": "110 minutes",
+        "language": "French with English subtitle",
+        "rated": "T16"
+      },
+      "AMDUONGSU": {
+        "title": "THE MASTER",
+        "description": "The Yin-Yang Master is a visually stunning fantasy film that takes you into a mystical world where magic and reality intertwine. Follow the master as he battles dark forces threatening the balance of the world.",
+        "genre": "Fantasy, Mystery",
+        "duration": "102 minutes",
+        "language": "Chinese with English subtitle",
+        "rated": "T13"
+      },
+      "HAROLD": {
+        "title": "HAROLD",
+        "description": "Harold is a heartwarming comedy-drama that chronicles the life of a man trying to rediscover himself. The film combines humor with poignant moments, creating a touching narrative about life and self-acceptance.",
+        "genre": "Drama, Action",
+        "duration": "98 minutes",
+        "language": "English",
+        "rated": "P"
+      },
+      "ROMULUS": {
+        "title": "ROMULUS",
+        "description": "Romulus is a historical action film that transports you to the time of ancient Rome. The film depicts the brutal and intense battles fought by the warriors of Rome, highlighting their valor and determination.",
+        "genre": "Historical, Action",
+        "duration": "104 minutes",
+        "language": "Latin with English subtitle",
+        "rated": "T18"
+      },
+      "HAI_MUOI": {
+        "title": "TWENTY",
+        "description": "Twenty is a coming-of-age drama that captures the exuberance and challenges of youth. The film portrays the journey of three young friends as they navigate through the ups and downs of their twenties.",
+        "genre": "Drama, Comedy",
+        "duration": "108 minutes",
+        "language": "Korean with English subtitle",
+        "rated": "T13"
+      },
+      "PILOT": {
+        "title": "PILOT",
+        "description": "Pilot is an action-packed adventure film that follows the life of a young aviator with big dreams. The film showcases the thrills and dangers of flying, and the personal sacrifices required to achieve greatness.",
+        "genre": "Action, Adventure",
+        "duration": "107 minutes",
+        "language": "English",
+        "rated": "P"
+      },
+      "HELLBOY": {
+        "title": "HELLBOY",
+        "description": "Hellboy returns in this explosive action film where he battles the forces of darkness to save humanity. With stunning visual effects and intense fight scenes, this film is a must-watch for action enthusiasts.",
+        "genre": "Action, Sci-Fi",
+        "duration": "113 minutes",
+        "language": "English",
+        "rated": "T18"
+      },
+      "WOLF": {
+        "title": "WOLF",
+        "description": "Wolf is a horror-action film that dives into the myth of the werewolf. The movie combines horror with high-octane action as the protagonist fights against their primal instincts to protect those they love.",
+        "genre": "Horror, Action",
+        "duration": "111 minutes",
+        "language": "English",
+        "rated": "T16"
+      }
+    },
+    "adBanner": {
+      "altText": "Ad Banner"
+    },
+    "home": {
+      "loading": "Loading...",
+      "popup_banner_alt": "Popup Banner",
+      "gif_banner_alt": "GIF Banner",
+      "left_banner_alt": "Left Small Banner {{id}}",
+      "right_banner_alt": "Right Small Banner {{id}}",
+      "banner_alt": "Banner {{id}}",
+      "movie_alt": "Movie {{title}}",
+      "view_details": "VIEW DETAILS",
+      "buy_ticket": "BUY TICKET",
+      "finger_icon_alt": "Finger Icon",
+      "cgv_members": "CGV Members",
+      "new_promotion": "New & Promotions",
+      "event_or_voucher_alt": "{{title}}",
+      "service_image_alt": "Service Image {{title}}"
+    },
+    "button": {
+      "like": "Like",
+      "unlike": "Unlike"
+    },
+    "userform": {
+      "login": "LOGIN",
+      "register": "REGISTER"
+    },
+    "login": {
+      "emailOrPhone": "Email or phone number",
+      "password": "Password",
+      "login_success": "Login successful",
+      "login_failure": "Invalid username or password",
+      "submit_button": "Login",
+      "errors": {
+      "emailOrPhone_required": "Please enter your email or phone number",
+      "password_required": "Please enter your password"
+    }
+    },
+    "register": {
+      "name": "Name",
+      "phone": "Phone number",
+      "email": "Email",
+      "password": "Password",
+      "register_success": "Registration successful",
+      "register_failure": "An error occurred during registration",
+      "submit_button": "Register",
+      "errors": {
+        "name_required": "Name cannot be empty",
+        "phone_required": "Phone number cannot be empty",
+        "email_required": "Email cannot be empty",
+        "email_invalid": "Please enter a valid email",
+        "password_required": "Password cannot be empty"
+      }
+    }
+  }

@@ -1,0 +1,42 @@
+/* MovieSlide.css */
+
+.movie-slider {
+    position: relative; /* Ensure relative positioning for absolute children */
+  }
+  
+  .movie-slider .swiper-button-next,
+  .movie-slider .swiper-button-prev {
+    position: absolute;
+    top: 30%;
+    width: 50px;
+    height: 50px;
+    margin-top: -15px; /* Center the buttons vertically */
+    z-index: 2; /* Place buttons above slides */
+    background-color: #E71A0F; /* Circle background color */
+    border-radius: 50%; /* Make the button circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .movie-slider .swiper-button-next {
+    right: 0px; /* Adjust positioning */
+  }
+  
+  .movie-slider .swiper-button-prev {
+    left: 0px; /* Adjust positioning */
+  }
+  
+  .movie-slider .swiper-pagination-bullet {
+    background-color: #E71A0F; /* Custom bullet color */
+    width: 12px;
+    height: 12px;
+    opacity: 1; /* Make bullets fully visible */
+  }
+  
+  .movie-slider .swiper-pagination-bullet-active {
+    background-color: #000; /* Active bullet color */
+  }
+  

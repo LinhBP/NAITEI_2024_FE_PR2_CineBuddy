@@ -1,0 +1,225 @@
+{
+    "welcome": "Xin chào",
+    "footer": {
+      "cgv_vietnam": "CGV Việt Nam",
+      "intro": "Giới Thiệu",
+      "online_services": "Tiện Ích Online",
+      "gift_card": "Thẻ Quà Tặng",
+      "recruitment": "Tuyển Dụng",
+      "ad_contact": "Liên Hệ Quảng Cáo CGV",
+      "partner": "Dành Cho Đối Tác",
+      "terms_of_use": "Điều khoản sử dụng",
+      "general_terms": "Điều Khoản Chung",
+      "transaction_terms": "Điều Khoản Giao Dịch",
+      "payment_policy": "Chính Sách Thanh Toán",
+      "privacy_policy": "Chính Sách Bảo Mật",
+      "faq": "Câu Hỏi Thường Gặp",
+      "connect_with_us": "Kết nối với chúng tôi",
+      "customer_service": "Chăm sóc khách hàng",
+      "hotline": "Hotline: 1900 6017",
+      "working_hours": "Giờ làm việc: 8:00 - 22:00 (Tất cả các ngày bao gồm cả lễ tết)",
+      "support_email": "Email hỗ trợ: hoidap@cgv.vn",
+      "cgv_company_name": "CÔNG TY TNHH CJ CGV VIỆT NAM",
+      "business_registration": "Giấy Chứng nhận đăng ký doanh nghiệp: 0303675393 đăng ký lần đầu ngày 31/7/2008, được cấp bởi Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh",
+      "address": "Địa chỉ: Lầu 2, số 7/28, Đường Thành Thái, Phường 14, Quận 10, Thành phố Hồ Chí Minh, Việt Nam",
+      "copyright": "COPYRIGHT 2017 CJ CGV VIETNAM CO., LTD. ALL RIGHTS RESERVED"
+    },
+    "header": {
+      "menu": "Menu",
+      "now_showing": "Phim Đang Chiếu",
+      "coming_soon": "Phim Sắp Chiếu",
+      "new_and_promotion": "Tin Mới và Ưu Đãi",
+      "my_tickets": "VÉ CỦA TÔI",
+      "login_register": "ĐĂNG NHẬP/ ĐĂNG KÝ",
+      "hello": "Xin Chào",
+      "logout": "Thoát",
+      "film": "Phim",
+      "cinemas": "Rạp",
+      "all_cinemas": "Tất Cả Các Rạp",
+      "special_cinemas": "Rạp Đặc Biệt",
+      "3d_cinemas": "Rạp 3D",
+      "members": "Thành Viên",
+      "cgv_account": "Tài Khoản CGV",
+      "benefits": "Quyền Lợi",
+      "cultureplex": "Cultureplex",
+      "online_store": "Quầy Online",
+      "rent_and_group": "Thuê Rạp & Vé Nhóm",
+      "e_cgv": "E-CGV",
+      "egift": "EGift",
+      "cgv_rules": "CGV Rules",
+      "language": {
+        "english": "EN",
+        "vietnamese": "VI"
+      }
+    },
+    "breadcrumbs": {
+      "movies": "Phim",
+      "now_showing": "Phim Đang Chiếu",
+      "coming_soon": "Phim Sắp Chiếu"
+    },
+    "now_showing": {
+      "title": "PHIM ĐANG CHIẾU",
+      "coming_soon": "PHIM SẮP CHIẾU"
+    },
+    "genre": "Thể loại",
+    "duration": "Thời lượng",
+    "release_date": "Khởi chiếu",
+    "description": "Mô tả",
+    "language": "Ngôn ngữ",
+    "rated": "Độ tuổi",
+    "buy_ticket": "MUA VÉ",
+    "details": "Chi tiết",
+    "trailer": "Trailer",
+    "movies": {
+      "MADA": {
+        "title": "MA DA",
+        "description": "MA DA là một bộ phim kinh dị đầy ám ảnh, đi sâu vào thế giới kinh hoàng của những điều bí ẩn. Khi những bí mật đen tối dần hé lộ, các nhân vật chính thấy mình rơi vào tình huống đe dọa tính mạng, thử thách sự tỉnh táo của họ.",
+        "genre": "Kinh Dị",
+        "duration": "95 phút",
+        "language": "Tiếng Việt với phụ đề tiếng Anh",
+        "rated": "T16"
+      },
+      "SHIN_2024": {
+        "title": "CẬU BÉ BÚT CHÌ",
+        "description": "Cùng Shin và các bạn bè trong một cuộc phiêu lưu đầy tiếng cười và cảm động trong 'Nhật Ký Khủng Long Của Chúng Mình'. Bộ phim kết hợp giữa hài hước và phiêu lưu, là một bộ phim gia đình hoàn hảo phù hợp với mọi lứa tuổi.",
+        "genre": "Gia Đình, Hài",
+        "duration": "105 phút",
+        "language": "Tiếng Nhật với phụ đề tiếng Anh",
+        "rated": "P"
+      },
+      "BORDERLANDS": {
+        "title": "BORDERLANDS",
+        "description": "Trở lại Pandora trong cuộc phiêu lưu khoa học viễn tưởng hoành tráng này, nơi mà nguy cơ đã cao hơn bao giờ hết. Bộ phim kết hợp giữa hài hước và các cảnh hành động căng thẳng, đưa khán giả vào một hành trình kỳ thú qua thiên hà.",
+        "genre": "Hài, Hành Động",
+        "duration": "101 phút",
+        "language": "Tiếng Anh",
+        "rated": "T13"
+      },
+      "REVOLVER": {
+        "title": "ĐÀ NỮ BÁO THÙ",
+        "description": "Đà Nữ Báo Thù kể về hành trình trả thù và đòi lại công lý của một người phụ nữ. Với các cảnh hành động mãnh liệt và cốt truyện gay cấn, bộ phim này sẽ giữ bạn luôn căng thẳng.",
+        "genre": "Hành Động",
+        "duration": "115 phút",
+        "language": "Tiếng Anh",
+        "rated": "T18"
+      },
+      "WRONG_SIDE": {
+        "title": "SAI BÊN",
+        "description": "Wrong Side là một bộ phim hành động kịch tính, khám phá mặt tối của bản chất con người. Bộ phim theo chân nhân vật chính trong cuộc chiến cam go với mọi khó khăn để sinh tồn.",
+        "genre": "Hành Động, Hồi Hộp",
+        "duration": "110 phút",
+        "language": "Tiếng Pháp với phụ đề tiếng Anh",
+        "rated": "T16"
+      },
+      "AMDUONGSU": {
+        "title": "ÂM DƯƠNG SƯ",
+        "description": "Âm Dương Sư là một bộ phim giả tưởng tuyệt đẹp, đưa bạn vào một thế giới huyền bí nơi mà phép thuật và hiện thực hòa quyện. Theo chân Âm Dương Sư trong cuộc chiến chống lại các thế lực đen tối đe dọa sự cân bằng của thế giới.",
+        "genre": "Viễn Tưởng, Huyền Bí",
+        "duration": "102 phút",
+        "language": "Tiếng Trung với phụ đề tiếng Anh",
+        "rated": "T13"
+      },
+      "HAROLD": {
+        "title": "HAROLD",
+        "description": "Harold là một bộ phim hài kịch cảm động, kể về cuộc hành trình tìm lại chính mình của một người đàn ông. Bộ phim kết hợp giữa hài hước và những khoảnh khắc cảm động, tạo nên một câu chuyện đầy tình người về cuộc sống và sự chấp nhận bản thân.",
+        "genre": "Tâm Lý, Hành Động",
+        "duration": "98 phút",
+        "language": "Tiếng Anh",
+        "rated": "P"
+      },
+      "ROMULUS": {
+        "title": "ROMULUS",
+        "description": "Cuộc chiến của các chiến binh La Mã...",
+        "genre": "Lịch Sử, Hành Động",
+        "duration": "104 phút",
+        "language": "Tiếng Latinh với phụ đề tiếng Anh",
+        "rated": "T18"
+      },
+      "HAI_MUOI": {
+        "title": "HAI MƯƠI",
+        "description": "Câu chuyện của tuổi hai mươi đầy nhiệt huyết...",
+        "genre": "Tâm Lý, Hài",
+        "duration": "108 phút",
+        "language": "Tiếng Hàn với phụ đề tiếng Anh",
+        "rated": "T13"
+      },
+      "PILOT": {
+        "title": "PILOT",
+        "description": "Một phi công trẻ với giấc mơ lớn...",
+        "genre": "Hành Động, Phiêu Lưu",
+        "duration": "107 phút",
+        "language": "Tiếng Anh",
+        "rated": "P"
+      },
+      "HELLBOY": {
+        "title": "HELLBOY",
+        "description": "Cuộc chiến của quỷ dữ và anh hùng...",
+        "genre": "Hành Động, Viễn Tưởng",
+        "duration": "113 phút",
+        "language": "Tiếng Anh",
+        "rated": "T18"
+      },
+      "WOLF": {
+        "title": "WOLF",
+        "description": "Cuộc chiến của người sói...",
+        "genre": "Kinh Dị, Hành Động",
+        "duration": "111 phút",
+        "language": "Tiếng Anh",
+        "rated": "T16"
+      }
+    },
+    "adBanner": {
+      "altText": "Biển quảng cáo"
+    },
+    "home": {
+      "loading": "Đang tải...",
+      "popup_banner_alt": "Biểu ngữ bật lên",
+      "gif_banner_alt": "Biểu ngữ GIF",
+      "left_banner_alt": "Biểu ngữ nhỏ bên trái {{id}}",
+      "right_banner_alt": "Biểu ngữ nhỏ bên phải {{id}}",
+      "banner_alt": "Biểu ngữ {{id}}",
+      "movie_alt": "Phim {{title}}",
+      "view_details": "XEM CHI TIẾT",
+      "buy_ticket": "MUA VÉ",
+      "finger_icon_alt": "Biểu tượng ngón tay",
+      "cgv_members": "Thành viên CGV",
+      "new_promotion": "Tin Mới & Ưu Đãi",
+      "event_or_voucher_alt": "{{title}}",
+      "service_image_alt": "Hình ảnh dịch vụ {{title}}"
+    },
+    "button": {
+      "like": "Thích",
+      "unlike": "Bỏ Thích"
+    },
+    "userform": {
+      "login": "ĐĂNG NHẬP",
+      "register": "ĐĂNG KÝ"
+    },
+    "login": {
+      "emailOrPhone": "Email hoặc số điện thoại",
+      "password": "Mật khẩu",
+      "login_success": "Đăng nhập thành công",
+      "login_failure": "Tài khoản hoặc mật khẩu không đúng",
+      "submit_button": "Đăng Nhập",
+      "errors": {
+        "emailOrPhone_required": "Vui lòng nhập email hoặc số điện thoại",
+        "password_required": "Vui lòng nhập mật khẩu"
+      }
+    },
+    "register": {
+      "name": "Tên",
+      "phone": "Số điện thoại",
+      "email": "Email",
+      "password": "Mật khẩu",
+      "register_success": "Đăng ký thành công",
+      "register_failure": "Đã xảy ra lỗi khi đăng ký",
+      "submit_button": "Đăng ký",
+      "errors": {
+        "name_required": "Tên không được bỏ trống",
+        "phone_required": "Số điện thoại không được bỏ trống",
+        "email_required": "Email không được bỏ trống",
+        "email_invalid": "Vui lòng nhập đúng email",
+        "password_required": "Mật khẩu không được bỏ trống"
+      }
+    }
+  }
