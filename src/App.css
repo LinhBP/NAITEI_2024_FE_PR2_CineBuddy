@@ -1,0 +1,256 @@
+import { MenuOutlined } from "@ant-design/icons";
+import React from "react";
+import { useNavigate } from "react-router-dom";
+
+export const Header: React.FC = () => {
+    const navigate = useNavigate();
+    const accessToken = false; // Mocked authentication status
+    const user = { hoTen: "User" }; // Mocked user data
+
+    const hambugerMenu = [
+        {
+            key: "menu",
+            label: "Menu",
+            icon: <MenuOutlined />,
+            children: [
+                {
+                    key: "/now-showing", // Mocked path
+                    label: "Phim Đang Chiếu",
+                },
+                {
+                    key: "/coming-soon", // Mocked path
+                    label: "Phim sắp chiếu",
+                },
+            ],
+        },
+        {
+            key: "ticket",
+            icon: (
+                <img
+                    src="https://cgv-booking-demo.vercel.app/image/icon_ticket25.png"
+                    alt=""
+                />
+            ),
+        },
+    ];
+
+    return (
+        <div className="bg-[url('https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-top.png')] bg-cover w-full h-[135px] mt-3">
+            <div className="flex justify-end gap-7 max-w-screen-lg mx-auto mt-3">
+                <div className="hidden sm:flex gap-7">
+                    <div
+                        className="flex gap-2 items-center cursor-pointer"
+                        onClick={() => navigate("/")}
+                    >
+                        <img src="https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/icon_promotion25.png" />
+                        <span>TIN MỚI VÀ ƯU ĐÃI</span>
+                    </div>
+                    <div
+                        className="flex gap-2 items-center cursor-pointer"
+                        onClick={() => {
+                            if (accessToken) {
+                                navigate("/account-info");
+                            } else {
+                                navigate("/login");
+                            }
+                        }}
+                    >
+                        <img src="https://cgv-booking-demo.vercel.app/image/icon_ticket25.png" />
+                        <span>VÉ CỦA TÔI</span>
+                    </div>
+                </div>
+                <div className="flex gap-2 items-center">
+                    <img src="https://cgv-booking-demo.vercel.app/image/icon_login25.png" />
+                    {!accessToken ? (
+                        <span
+                            onClick={() => navigate("/login")}
+                            className="cursor-pointer"
+                        >
+                            ĐĂNG NHẬP/ ĐĂNG KÝ
+                        </span>
+                    ) : (
+                        <span>
+                            <span
+                                onClick={() => navigate("/account-info")}
+                                className="cursor-pointer"
+                            >
+                                {`XIN CHÀO, ${user?.hoTen?.toUpperCase()}! `}
+                            </span>
+                            <span
+                                onClick={() => navigate("/")}
+                                className="cursor-pointer hover:underline"
+                            >
+                                THOÁT
+                            </span>
+                        </span>
+                    )}
+                </div>
+                <div className="flex items-center">
+                    <span className="bg-primary px-2 py-1 rounded-l text-white cursor-pointer">
+                        VN
+                    </span>
+                    <span className="bg-secondary px-2 py-1 rounded-r text-white cursor-pointer">
+                        EN
+                    </span>
+                </div>
+            </div>
+            <div className="flex justify-center mt-4">
+                <a
+                    onClick={() => navigate("/")}
+                    className="h-full flex items-center cursor-pointer"
+                >
+                    <img
+                        src="https://www.cgv.vn/skin/frontend/cgv/default/images/cgvlogo.png"
+                        alt=""
+                    />
+                </a>
+                <div className="hidden md:flex items-center ml-5">
+                    <ul className="flex gap-6 font-bold">
+                        <li className="relative group">
+                            PHIM
+                            <div className="hidden group-hover:block absolute bg-[url('https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg_menu_hover.png')] min-w-[220px] p-1 border-4 border-gray-400">
+                                <a
+                                    onClick={() => navigate("/now-showing")}
+                                    className="block p-2 hover:text-primary"
+                                >
+                                    Phim Đang Chiếu
+                                </a>
+                                <a
+                                    onClick={() => navigate("/coming-soon")}
+                                    className="block p-2 hover:text-primary"
+                                >
+                                    Phim Sắp Chiếu
+                                </a>
+                            </div>
+                        </li>
+                        <li className="relative group">
+                            RẠP CGV
+                            <div className="hidden group-hover:block absolute bg-[url('https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg_menu_hover.png')] min-w-[220px] p-1 border-4 border-gray-400">
+                                <a
+                                    onClick={() => navigate("/cinemas")}
+                                    className="block p-2 hover:text-primary"
+                                >
+                                    Tất Cả Các Rạp
+                                </a>
+                                <a href="#" className="block p-2 hover:text-primary">
+                                    Rạp Đặc Biệt
+                                </a>
+                                <a href="#" className="block p-2 hover:text-primary">
+                                    Rạp 3D
+                                </a>
+                            </div>
+                        </li>
+                        <li className="relative group">
+                            THÀNH VIÊN
+                            <div className="hidden group-hover:block absolute bg-[url('https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg_menu_hover.png')] min-w-[220px] p-1 border-4 border-gray-400">
+                                <a
+                                    onClick={() => {
+                                        if (accessToken) {
+                                            navigate("/account-info");
+                                        } else {
+                                            navigate("/login");
+                                        }
+                                    }}
+                                    className="block p-2 hover:text-primary"
+                                >
+                                    Tài Khoản CGV
+                                </a>
+                                <a href="#" className="block p-2 hover:text-primary">
+                                    Quyền Lợi
+                                </a>
+                            </div>
+                        </li>
+                        <li className="relative group">
+                            CULTUREPLEX
+                            <div className="hidden group-hover:block absolute bg-[url('https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg_menu_hover.png')] min-w-[220px] p-1 border-4 border-gray-400">
+                                <a href="#" className="block p-2 hover:text-primary">
+                                    Quầy Online
+                                </a>
+                                <a href="#" className="block p-2 hover:text-primary">
+                                    Thuê Rạp & Vé Nhóm
+                                </a>
+                                <a href="#" className="block p-2 hover:text-primary">
+                                    E-CGV
+                                </a>
+                                <a href="#" className="block p-2 hover:text-primary">
+                                    CGV EGift
+                                </a>
+                                <a href="#" className="block p-2 hover:text-primary">
+                                    CGV Rules
+                                </a>
+                            </div>
+                        </li>
+                        <li className="relative group">
+                            TUYỂN DỤNG
+                            <img
+                                src="https://www.cgv.vn/skin//frontend/cgv/default/images/hot-jobs.png"
+                                alt=""
+                                className="inline-block"
+                            />
+                            <div className="hidden group-hover:block absolute bg-[url('https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg_menu_hover.png')] min-w-[220px] p-1 border-4 border-gray-400">
+                                <a href="#" className="block p-2 hover:text-primary">
+                                    Tuyển Dụng
+                                </a>
+                                <a href="#" className="block p-2 hover:text-primary">
+                                    Khối Văn Phòng
+                                </a>
+                                <a href="#" className="block p-2 hover:text-primary">
+                                    Khối Cụm Rạp
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <div className="ml-4">
+                        <a href="#">
+                            <img
+                                src="https://www.cgv.vn/media/wysiwyg/2019/AUG/kenhcine.gif"
+                                alt=""
+                            />
+                        </a>
+                    </div>
+                    <div className="ml-4 mt-14 cursor-pointer">
+                        <a onClick={() => navigate("/now-showing")}>
+                            <img
+                                src="https://www.cgv.vn/media/wysiwyg/news-offers/mua-ve_ngay.png"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            {/* Mobile Menu */}
+            <div className="md:hidden">
+                <div
+                    className="w-full"
+                    onClick={({ key }) => navigate(key)}
+                >
+                    {hambugerMenu.map((menuItem) => (
+                        <div key={menuItem.key}>
+                            <div className="flex justify-between items-center p-2 bg-gray-200">
+                                <span>{menuItem.label}</span>
+                                {menuItem.icon}
+                            </div>
+                            {menuItem.children && (
+                                <div className="pl-4">
+                                    {menuItem.children.map((child) => (
+                                        <div
+                                            key={child.key}
+                                            className="p-2 cursor-pointer hover:bg-gray-100"
+                                            onClick={() =>
+                                                navigate(child.key)
+                                            }
+                                        >
+                                            {child.label}
+                                        </div>
+                                    ))}
+                                </div>
+                            )}
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    );
+};
+
+export default Header;
