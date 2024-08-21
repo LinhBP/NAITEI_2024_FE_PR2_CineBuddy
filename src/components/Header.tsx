@@ -1,16 +1,17 @@
-//src/components/Header.tsx
-
 import { MenuOutlined } from "@ant-design/icons";
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import {
   handleNavigate,
-  handleLogout,
   handleAccountInfoClick,
 } from "../utils/navigation.ts";
 import { i18n as I18nInstance } from "i18next";
-import { getLoggedInUserFromLocalStorage } from "../utils/UserLocalStorage.ts";
+import {
+  getLoggedInUserFromSessionStorage,
+  getLoggedInUserFromCookies,
+  logoutUser,
+} from "../utils/UserLocalStorage.ts";
 
 interface AdBanner {
   id: number;
@@ -37,7 +38,7 @@ const menuItems = [
   {
     title: "header.cinemas",
     children: [
-      { title: "header.all_cinemas", action: "/cinemas" },
+      { title: "header.all_cinemas", action: "/cinema" },
       { title: "header.special_cinemas", action: "#" },
       { title: "header.3d_cinemas", action: "#" },
     ],
@@ -68,7 +69,11 @@ export const Header: React.FC = () => {
   const [isNavbarOpen, setIsNavbarOpen] = useState(false);
   const [activeMenu, setActiveMenu] = useState<string | null>(null);
   const [adBanner, setAdBanner] = useState<AdBanner | null>(null);
-  const [user, setUser] = useState(getLoggedInUserFromLocalStorage());
+
+  // Check ca sessionStorage and cookies for logged-in user
+  const [user, setUser] = useState(
+    getLoggedInUserFromSessionStorage() || getLoggedInUserFromCookies()
+  );
 
   useEffect(() => {
     const fetchAdBanner = async () => {
@@ -88,6 +93,16 @@ export const Header: React.FC = () => {
 
   const handleMenuClick = (menuTitle: string) => {
     setActiveMenu((prevMenu) => (prevMenu === menuTitle ? null : menuTitle));
+  };
+
+  const handleLoginLogoutClick = () => {
+    if (user) {
+      logoutUser(); 
+      setUser(null);
+      navigate('/');
+    } else {
+      navigate("/login");
+    }
   };
 
   return (
@@ -113,7 +128,7 @@ export const Header: React.FC = () => {
               className="flex gap-2 items-center cursor-pointer"
               onClick={() =>
                 handleNavigate(navigate, user ? "/account-info" : "/login")
-              } // Redirect based on login status
+              }
             >
               <img src="/images/booking-ticket.png" />
               <span>{t("header.my_tickets")}</span>
@@ -131,13 +146,13 @@ export const Header: React.FC = () => {
             ) : (
               <span>
                 <span
-                  onClick={() => handleAccountInfoClick(navigate)} // Use centralized navigation function
+                  onClick={() => handleAccountInfoClick(navigate)}
                   className="cursor-pointer"
                 >
                   {`${t("header.hello").toUpperCase()}, ${user.userName?.toUpperCase()}! `}
                 </span>
                 <span
-                  onClick={() => handleLogout(navigate, setUser)} // Use centralized logout function
+                  onClick={() => handleLoginLogoutClick()}
                   className="cursor-pointer hover:underline"
                 >
                   {t("header.logout").toUpperCase()}
@@ -222,27 +237,34 @@ export const Header: React.FC = () => {
       <div className="md:hidden">
         <div className="grid grid-cols-4 p-2 bg-gray-200 cursor-pointer">
           <div
-            className="flex justify-center items-center"
+            className="flex justify-center items-center relative"
             onClick={() => setIsNavbarOpen(!isNavbarOpen)}
           >
             <MenuOutlined className="text-xl" />
+            <span className="absolute bottom-10 bg-black text-white text-xs rounded px-2 py-1 opacity-0 hover:opacity-100">
+              {t("header.menu")}
+            </span>
           </div>
           <div
-            className="flex justify-center items-center"
-            onClick={() => navigate("/now-showing")}
+            className="flex justify-center items-center relative"
+            onClick={() => navigate("/account-info")}
           >
             <img src="/images/booking-ticket.png" className="h-6" />
+            <span className="absolute bottom-10 bg-black text-white text-xs rounded px-2 py-1 opacity-0 hover:opacity-100">
+              {t("header.my_tickets")}
+            </span>
           </div>
           <div
-            className="flex justify-center items-center"
-            onClick={() =>
-              handleNavigate(navigate, user ? "/account-info" : "/login")
-            }
+            className="flex justify-center items-center relative"
+            onClick={handleLoginLogoutClick}
           >
             <img src="/images/icon-login.png" className="h-6" />
+            <span className="absolute bottom-10 bg-black text-white text-xs rounded px-2 py-1 opacity-0 hover:opacity-100">
+              {user ? t("header.logout") : t("header.login_register")}
+            </span>
           </div>
           <div
-            className="flex justify-center items-center"
+            className="flex justify-center items-center relative"
             onClick={() =>
               changeLanguage(
                 i18n,
@@ -257,6 +279,9 @@ export const Header: React.FC = () => {
               }`}
             >
               {activeLang.toUpperCase()}
+            </span>
+            <span className="absolute bottom-10 bg-black text-white text-xs rounded px-2 py-1 opacity-0 hover:opacity-100">
+              {t("header.change_language")}
             </span>
           </div>
         </div>

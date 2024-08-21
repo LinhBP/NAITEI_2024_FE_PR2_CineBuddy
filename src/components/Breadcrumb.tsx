@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// Define the types for the Breadcrumb component props
 interface BreadcrumbProps {
   items: {
     title: React.ReactNode;
     path?: string;
   }[];
-  separator?: React.ReactNode; // Optional separator, default is '>'
+  separator?: React.ReactNode; 
 }
 
 const Breadcrumb: React.FC<BreadcrumbProps> = ({ items, separator = ">" }) => {

@@ -50,7 +50,8 @@
       "language": {
         "english": "EN",
         "vietnamese": "VI"
-      }
+      },
+      "change_language": "Change Language"
     },
     "breadcrumbs": {
       "movies": "Movies",
@@ -77,7 +78,7 @@
         "genre": "Horror",
         "duration": "95 minutes",
         "language": "Vietnamese with English subtitle",
-        "rated": "T16"
+        "rated": "T16 - movies suitable for viewers aged full 16 years or older"
       },
       "SHIN_2024": {
         "title": "SHIN CHAN",
@@ -85,7 +86,7 @@
         "genre": "Family, Comedy",
         "duration": "105 minutes",
         "language": "Japanese with English subtitle",
-        "rated": "P"
+        "rated": "P - movies suitable for general audiences"
       },
       "BORDERLANDS": {
         "title": "BORDERLANDS",
@@ -93,7 +94,7 @@
         "genre": "Comedy, Action",
         "duration": "101 minutes",
         "language": "English",
-        "rated": "T13"
+        "rated": "T13 - movies suitable for viewers aged full 13 years or older"
       },
       "REVOLVER": {
         "title": "REVOLVER",
@@ -101,7 +102,7 @@
         "genre": "Action",
         "duration": "115 minutes",
         "language": "English",
-        "rated": "T18"
+        "rated": "T18 - movies suitable for viewers aged full 18 years or older"
       },
       "WRONG_SIDE": {
         "title": "WRONG SIDE",
@@ -109,7 +110,7 @@
         "genre": "Action, Thriller",
         "duration": "110 minutes",
         "language": "French with English subtitle",
-        "rated": "T16"
+        "rated": "T16 - movies suitable for viewers aged full 16 years or older"
       },
       "AMDUONGSU": {
         "title": "THE MASTER",
@@ -117,7 +118,7 @@
         "genre": "Fantasy, Mystery",
         "duration": "102 minutes",
         "language": "Chinese with English subtitle",
-        "rated": "T13"
+        "rated": "T13 - movies suitable for viewers aged full 13 years or older"
       },
       "HAROLD": {
         "title": "HAROLD",
@@ -125,7 +126,7 @@
         "genre": "Drama, Action",
         "duration": "98 minutes",
         "language": "English",
-        "rated": "P"
+        "rated": "P - movies suitable for general audiences"
       },
       "ROMULUS": {
         "title": "ROMULUS",
@@ -133,7 +134,7 @@
         "genre": "Historical, Action",
         "duration": "104 minutes",
         "language": "Latin with English subtitle",
-        "rated": "T18"
+        "rated": "T18 - movies suitable for viewers aged full 18 years or older"
       },
       "HAI_MUOI": {
         "title": "TWENTY",
@@ -141,7 +142,7 @@
         "genre": "Drama, Comedy",
         "duration": "108 minutes",
         "language": "Korean with English subtitle",
-        "rated": "T13"
+        "rated": "T13 - movies suitable for viewers aged full 13 years or older"
       },
       "PILOT": {
         "title": "PILOT",
@@ -149,7 +150,7 @@
         "genre": "Action, Adventure",
         "duration": "107 minutes",
         "language": "English",
-        "rated": "P"
+        "rated": "P - movies suitable for general audiences"
       },
       "HELLBOY": {
         "title": "HELLBOY",
@@ -157,7 +158,7 @@
         "genre": "Action, Sci-Fi",
         "duration": "113 minutes",
         "language": "English",
-        "rated": "T18"
+        "rated": "T18 - movies suitable for viewers aged full 18 years or older"
       },
       "WOLF": {
         "title": "WOLF",
@@ -165,7 +166,7 @@
         "genre": "Horror, Action",
         "duration": "111 minutes",
         "language": "English",
-        "rated": "T16"
+        "rated": "T16 - movies suitable for viewers aged full 16 years or older"
       }
     },
     "adBanner": {
@@ -201,9 +202,14 @@
       "login_success": "Login successful",
       "login_failure": "Invalid username or password",
       "submit_button": "Login",
+      "remember_me": "Remember Me",
       "errors": {
-      "emailOrPhone_required": "Please enter your email or phone number",
-      "password_required": "Please enter your password"
+        "emailOrPhone_required": "Email or phone number is required.",
+        "password_required": "Password is required.",
+        "password_uppercase": "Password must contain at least one uppercase letter.",
+        "password_lowercase": "Password must contain at least one lowercase letter.",
+        "password_number": "Password must contain at least one number.",
+        "password_special": "Password must contain at least one special character."
     }
     },
     "register": {
@@ -211,18 +217,88 @@
       "phone": "Phone number",
       "email": "Email",
       "password": "Password",
+      "confirm_password": "Confirm Password",
       "register_success": "Registration successful",
       "register_failure": "An error occurred during registration",
       "submit_button": "Register",
+      "user_exists": "User already exists",
       "errors": {
-        "name_required": "Name cannot be empty",
-        "phone_required": "Phone number cannot be empty",
-        "email_required": "Email cannot be empty",
-        "email_invalid": "Please enter a valid email",
-        "password_required": "Password cannot be empty"
+        "name_required": "Name is required",
+        "phone_required": "Phone number is required",
+        "email_required": "Email is required",
+        "email_invalid": "Please enter a valid email address",
+        "password_required": "Password must be at least 8 characters long",
+        "password_uppercase": "Password must include at least one uppercase letter",
+        "password_lowercase": "Password must include at least one lowercase letter",
+        "password_number": "Password must include at least one number",
+        "password_special": "Password must include at least one special character",
+        "confirm_password_required": "Confirm password is required",
+        "passwords_mismatch": "Passwords do not match"
       }
     },
     "showtimes": {
       "no_showtimes": "No showtimes available"
+    },
+    "showing": {
+      "title": "Booking Online"
+    },
+    "seats": {
+      "standard": "Standard",
+      "vip": "VIP",
+      "sweetbox": "Sweetbox",
+      "checked": "Checked",
+      "occupied": "Occupied",
+      "unavailable": "Unavailable",
+      "price":"Price"
+    },
+    "booking": {
+      "theater": "Theater",
+      "time": "Time",
+      "remaining": "Remaining",
+      "alert": "You have to choose your seat first."
+    },
+    "price": {
+      "movie": "Movie",
+      "combo": "Combo",
+      "total": "Total"
+    },
+    "payment": {
+      "title": "Payment",
+      "step1": "Step 1:",
+      "discount": "Discount",
+      "reset": "Reset",
+      "voucher_notice": "Currently, the payment feature using Vouchers, Coupons, Points on the website is under maintenance. Please download/update the latest CGV app to continue.",
+      "partner": "Partner",
+      "promo_code": "Promo Code",
+      "step2": "Step 2:",
+      "payment_method": "Payment Method",
+      "atm_card": "ATM Card (Domestic)",
+      "international_card": "International Card (Visa, Master, Amex, JCB)",
+      "momo": "MoMo - Enter TRIKYMOMO to get a 15K discount on Sat-Sun",
+      "zalopay": "ZaloPay: New user ticket 14k - Close friend ticket 84K",
+      "shopeepay": "ShopeePay",
+      "summary": "Booking Summary",
+      "movie": "Movie",
+      "showtime": "Showtime",
+      "cinema": "Cinema",
+      "seats": "Seats",
+      "total": "Total",
+      "pay_button": "Pay",
+      "success": "Payment Successful!",
+      "failure": "Failed to complete payment. Please try again.",
+      "date": "Date"
+    },
+    "accountInfo": {
+      "title": "Your Ticket Information",
+      "cinema": "Cinema",
+      "showtime": "Showtime",
+      "date": "Date",
+      "seats": "Seats",
+      "price": "Price",
+      "ticket_code": "Ticket Code",
+      "no_tickets": "You don't have any tickets."
+    },
+    "cinema": {
+      "title": "CGV CINEMAS"
     }
   }

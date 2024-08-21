@@ -40,7 +40,8 @@ const Home: React.FC = () => {
   const [showGif, setShowGif] = useState(true);
   const [isFetchingMovieList, setIsFetchingMovieList] = useState(true);
   const [activeTab, setActiveTab] = useState<"cgv" | "promotion">("cgv");
-  const [modal, setModal] = useState<boolean | null>(null); // Modal state
+  const [modalVisible, setModalVisible] = useState<boolean | null>(null); // State for modal visibility
+  const [selectedMovieId, setSelectedMovieId] = useState<number | null>(null); // State for selected movie ID
   const navigate = useNavigate();
   const { t } = useTranslation();
 
@@ -86,6 +87,11 @@ const Home: React.FC = () => {
 
   if (isFetchingMovieList) return <div>{t("home.loading")}</div>;
 
+  const handleOpenModal = (movieId: number) => {
+    setSelectedMovieId(movieId);
+    setModalVisible(true);
+  };
+
   return (
     <div>
       <PopupBanner showPopup={showPopup} popupBanner={popupBanner} setShowPopup={setShowPopup} />
@@ -101,15 +107,14 @@ const Home: React.FC = () => {
         { className: "bg-menu-7" },
       ]} />
       <BigBanner bannerList={bannerList} />
-      {/* Removed the 't' prop */}
-      <MoviesSection movieList={movieList} navigate={navigate} setModal={setModal} />
+      <MoviesSection movieList={movieList} navigate={navigate} setModal={handleOpenModal} />
       <EventSection eventList={eventList} voucherList={voucherList} activeTab={activeTab} setActiveTab={setActiveTab} t={t} />
       <ServiceSection serviceList={serviceList} t={t} />
-      {modal && (
+      {modalVisible && selectedMovieId !== null && (
         <ShowtimeModal
-          maPhim={0} // No specific movie ID needed here; adjust logic as necessary
-          modal={modal}
-          setModal={setModal}
+          movieId={selectedMovieId} // Pass the selected movieId
+          modal={modalVisible}
+          setModal={setModalVisible} // This function now controls visibility only
         />
       )}
     </div>

@@ -14,7 +14,7 @@ module.exports = {
       },
       backgroundImage: {
         'brand-footer': "url('/public/images/brand-footer.png')",
-        'home-menu': "url('/public/images/bg-header-home.png')", // Add the home menu background image
+        'home-menu': "url('/public/images/bg-header-home.png')",
       },
       backgroundPosition: {
         'brand-1': '-391px 5px', 
@@ -40,6 +40,15 @@ module.exports = {
       spacing: {
         'swiper-button-offset': '160px',
         'bullet-size': '15px',
+      },
+      textShadow: {
+        'custom': '2px 2px 2px #b9b9b9',
+      },
+      fontSize: {
+        'custom-xl': '48px',
+      },
+      textColor: {
+        'custom-gray': '#717171',
       },
     },
   },

@@ -2,21 +2,21 @@
 
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css'; // Import Swiper styles
-import 'swiper/css/navigation'; // Import navigation styles
-import { Navigation, Autoplay } from 'swiper/modules'; // Import necessary modules
-import '../style/MovieSlide.css'; // Import custom styles for the slider
+import 'swiper/css'; 
+import 'swiper/css/navigation'; 
+import { Navigation, Autoplay } from 'swiper/modules'; 
+import '../style/MovieSlide.css'; 
 
 import { Movie } from '../utils/api.ts';
-import MovieCard from '../components/MovieCard.tsx'; // Import the MovieCard component
+import MovieCard from '../components/MovieCard.tsx'; 
 
 interface MovieSliderProps {
   movies: Movie[];
-  filterCondition: (movie: Movie) => boolean; // Filter condition for the movies
+  filterCondition: (movie: Movie) => boolean; 
   hasLiked: { [key: number]: boolean };
   likes: { [key: number]: number };
   onLike: (id: number) => void;
-  setModal: (movieId: number) => void; // Updated to receive a function with movieId
+  setModal: (movieId: number) => void; 
 }
 
 const MovieSlider: React.FC<MovieSliderProps> = ({
@@ -39,8 +39,8 @@ const MovieSlider: React.FC<MovieSliderProps> = ({
       }}
       navigation
       autoplay={{
-        delay: 3000, // Delay between slides in milliseconds
-        disableOnInteraction: false, // Continue auto-sliding after user interaction
+        delay: 3000, 
+        disableOnInteraction: false, 
       }}
       modules={[Navigation, Autoplay]}
     >
@@ -51,7 +51,7 @@ const MovieSlider: React.FC<MovieSliderProps> = ({
             hasLiked={hasLiked[movie.id]}
             likes={likes[movie.id]}
             onLike={onLike}
-            setModal={() => setModal(movie.id)} // Set modal with movie ID
+            setModal={() => setModal(movie.id)} 
           />
         </SwiperSlide>
       ))}

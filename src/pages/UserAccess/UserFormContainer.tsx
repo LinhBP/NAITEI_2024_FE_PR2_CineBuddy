@@ -31,7 +31,7 @@ const UserFormContainer: FC<UserFormContainerProps> = ({ children }) => {
                     `inline-block text-center w-full pt-[15px] pb-[10px] ${isActive ? 'border-b-4 border-white text-white' : ''}`
                   }
                 >
-                  {t('userform.login')} {/* Use translation key for LOGIN */}
+                  {t('userform.login')} 
                 </NavLink>
               </div>
               <div>
@@ -41,7 +41,7 @@ const UserFormContainer: FC<UserFormContainerProps> = ({ children }) => {
                     `inline-block text-center w-full pt-[15px] pb-[10px] ${isActive ? 'border-b-4 border-white text-white' : ''}`
                   }
                 >
-                  {t('userform.register')} {/* Use translation key for REGISTER */}
+                  {t('userform.register')} 
                 </NavLink>
               </div>
             </div>

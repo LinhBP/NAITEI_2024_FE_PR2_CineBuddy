@@ -1,6 +1,6 @@
 import React from 'react';
-import { BreadcrumbSection } from '../../components/Breadcrumb.tsx'; // Ensure .tsx extension is correct
-import { movieDetailBreadcrumbItems } from '../../constants/breadcrumbItems.tsx'; // Ensure .tsx extension is correct
+import { BreadcrumbSection } from '../../components/Breadcrumb.tsx'; 
+import { movieDetailBreadcrumbItems } from '../../constants/breadcrumbItems.tsx'; 
 import { useTranslation } from 'react-i18next';
 
 interface BreadcrumbSectionProps {
@@ -8,12 +8,12 @@ interface BreadcrumbSectionProps {
 }
 
 const MovieDetailBreadcrumb: React.FC<BreadcrumbSectionProps> = ({ movieTitle }) => {
-  const { t } = useTranslation(); // Get translation function
+  const { t } = useTranslation(); 
 
-  // Generate breadcrumb items and map through to translate
+  // tao breadcrumb items and map
   const breadcrumbItems = movieDetailBreadcrumbItems(movieTitle).map((item) => ({
     ...item,
-    title: item.titleKey ? t(item.titleKey) : item.title, // Translate if key exists
+    title: item.titleKey ? t(item.titleKey) : item.title, 
   }));
 
   return <BreadcrumbSection items={breadcrumbItems} separator=">" />;

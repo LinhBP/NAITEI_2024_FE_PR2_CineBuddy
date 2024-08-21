@@ -1,25 +1,28 @@
+// src/pages/Home/MovieSection.tsx
+
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
-import { Movie } from "../../utils/api.ts"; // Correct import for Movie type
-import TicketButton from "../../components/TicketButton.tsx";
-import { useNavigate } from "react-router-dom"; // Import useNavigate
+import { Movie } from "../../types/types.ts";
+import TicketButton from "../../components/TicketButton.tsx"; 
+import { NavigateFunction } from "react-router-dom";
 import { useTranslation } from "react-i18next"; 
 
 interface MoviesSectionProps {
   movieList: Movie[];
-  setModal: React.Dispatch<React.SetStateAction<boolean | null>>;
+  navigate: NavigateFunction;
+  setModal: (movieId: number) => void; // Update prop type to accept movieId
 }
 
 const MoviesSection: React.FC<MoviesSectionProps> = ({
   movieList,
+  navigate,
   setModal,
 }) => {
-  const { t } = useTranslation();
-  const navigate = useNavigate(); // Initialize useNavigate
+  const { t } = useTranslation(); 
 
   const nowShowingList = movieList.filter((movie) => movie.dangChieu);
 
@@ -75,16 +78,8 @@ const MoviesSection: React.FC<MoviesSectionProps> = ({
                     >
                       {t("home.view_details")}
                     </button>
-                    <TicketButton 
-                      movieId={movie.id} 
-                      setModal={setModal} // Pass setModal to TicketButton
-                    />
-                    <button
-                      className="flex items-center px-[8px] py-[7px] rounded-[5px] text-[13px] border-none cursor-pointer bg-blue-700 text-white hover:bg-blue-900"
-                      onClick={() => setModal(true)} // Trigger modal to open
-                    >
-                      {t("home.buy_ticket")}
-                    </button>
+                    {/* Pass setModal with the correct movieId */}
+                    <TicketButton movieId={movie.id} setModal={() => setModal(movie.id)} />
                   </div>
                 </div>
               </div>

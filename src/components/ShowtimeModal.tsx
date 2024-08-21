@@ -1,5 +1,3 @@
-// src/components/ShowtimeModal.tsx
-
 import React, { useEffect, useState } from 'react';
 import { Modal } from 'antd';
 import { fetchMovieShowtimes, Showtime, fetchMovieDetails } from '../utils/api.ts';
@@ -91,11 +89,9 @@ const ShowtimeModal: React.FC<ShowtimeModalProps> = ({ modal, setModal, movieId 
       open={!!modal}
       onCancel={() => setModal(null)}
       footer={null}
-      closeIcon={<CloseCircleOutlined className="text-black text-2xl" />}
-      bodyStyle={{ padding: '0', backgroundColor: '#fdfcf0' }}
+      closeIcon={<CloseCircleOutlined className="text-black text-2xl bg-[#fdfcf0] my-[10px]" />}
       width="90vw"
       centered={false}
-      style={{ top: '10px', bottom: '10px' }}
       className="fixed inset-0 z-50 flex items-center justify-center"
     >
       <div className="w-full h-full max-w-[85vw] max-h-[90vh] bg-[#fdfcf0] p-4 overflow-y-auto">
@@ -106,7 +102,7 @@ const ShowtimeModal: React.FC<ShowtimeModalProps> = ({ modal, setModal, movieId 
             return (
               <button
                 key={date}
-                className={`flex items-center border-2 rounded-md p-3 w-[80px] h-[80px] ${
+                className={`flex items-center border-2 rounded-md p-3 w-[100px] h-[60px] ${
                   selectedDate === date ? 'border-black' : 'border-transparent'
                 } hover:border-black`}
                 onClick={() => handleDateChange(date)}
@@ -162,13 +158,13 @@ const ShowtimeModal: React.FC<ShowtimeModalProps> = ({ modal, setModal, movieId 
                 <div key={cinema.cinemaName} className="mb-4">
                   <h3 className="font-bold">{cinema.cinemaName}</h3>
                   <div className="flex gap-2 mt-2">
-                    {cinema.showtimes.map((showtime) => (
+                    {cinema.timeshowing.map((timeshowing) => (
                       <button
-                        key={showtime.id}
+                        key={timeshowing.id}
                         className="px-3 py-1 border rounded-md hover:bg-black hover:text-white"
-                        onClick={() => handleShowtimeClick(showtime.id, cinema.cinemaName, showtime.time)}
+                        onClick={() => handleShowtimeClick(timeshowing.id, cinema.cinemaName, timeshowing.time)}
                       >
-                        {showtime.time}
+                        {timeshowing.time}
                       </button>
                     ))}
                   </div>

@@ -38,7 +38,7 @@ const SmallBanners: React.FC<SmallBannersProps> = ({
       {rightSmallBanners.map((banner) => (
         <div
           key={banner.id}
-          className={`fixed top-0 w-[120px] h-screen bg-transparent z-[1000] hidden md:block ${
+          className={`fixed top-0 w-[120px] h-screen bg-transparent z-[1000] hidden md:block right-0 ${
             banner.id === 1 ? "right-0" : ""
           }`}
         >

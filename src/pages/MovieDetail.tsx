@@ -59,7 +59,7 @@ const MovieDetail: React.FC = () => {
       title: (
         <Link to="/">
           <img
-            src="https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-cgv-bread-home.png"
+            src="/images/bg-cgv-bread-home.png"
             alt="Home"
           />
         </Link>
