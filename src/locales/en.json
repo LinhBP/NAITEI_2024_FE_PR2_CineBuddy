@@ -1,9 +1,5 @@
 {
     "welcome": "Hi",
-    "language": {
-    "english": "English",
-    "vietnamese": "Vietnamese"
-    },
     "footer": {
         "cgv_vietnam": "CGV Vietnam",
         "intro": "Introduction",
@@ -27,5 +23,33 @@
         "business_registration": "Business Registration Certificate: 0303675393, initially registered on July 31, 2008, issued by the Department of Planning and Investment of Ho Chi Minh City",
         "address": "Address: 2nd Floor, No. 7/28, Thanh Thai Street, Ward 14, District 10, Ho Chi Minh City, Vietnam",
         "copyright": "COPYRIGHT 2017 CJ CGV VIETNAM CO., LTD. ALL RIGHTS RESERVED"
+    },
+    "header": {
+        "menu": "Menu",
+        "now_showing": "Now Showing",
+        "coming_soon": "Coming Soon",
+        "new_and_promotion": "New & Promotions",
+        "my_tickets": "My Tickets",
+        "login_register": "Login / Register",
+        "hello": "Hello",
+        "logout": "Logout",
+        "film": "Movies",
+        "cinemas": "Cinemas",
+        "all_cinemas": "All Cinemas",
+        "special_cinemas": "Special Cinemas",
+        "3d_cinemas": "3D Cinemas",
+        "members": "Members",
+        "cgv_account": "CGV Account",
+        "benefits": "Benefits",
+        "cultureplex": "Cultureplex",
+        "online_store": "Online Store",
+        "rent_and_group": "Rent & Group",
+        "e_cgv": "E-CGV",
+        "egift": "EGift",
+        "cgv_rules": "CGV Rules",
+        "language": {
+            "english": "EN",
+            "vietnamese": "VI"
+        }
     }
 }

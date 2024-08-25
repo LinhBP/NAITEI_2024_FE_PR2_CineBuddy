@@ -1,0 +1,205 @@
+{
+    "banners": [
+      {
+        "id": 1,
+        "image": "/images/banner1.png"
+      },
+      {
+        "id": 2,
+        "image": "/images/banner2.jpg"
+      },
+      {
+        "id": 3,
+        "image": "/images/banner3.jpg"
+      },
+      {
+        "id": 4,
+        "image": "/images/banner4.jpg"
+      },
+      {
+        "id": 5,
+        "image": "/images/banner5.jpg"
+      },
+      {
+        "id": 6,
+        "image": "/images/banner6.jpg"
+      },
+      {
+        "id": 7,
+        "image": "/images/banner7.jpg"
+      }
+    ],
+    "movies": [
+      {
+        "id": 1,
+        "title": "movies.mada.title",
+        "image": "/images/movie1.jpg",
+        "trailer": "trailer_link_1",
+        "description": "movies.mada.description",
+        "dangChieu": true
+      },
+      {
+        "id": 2,
+        "title": "movies.shin2024.title",
+        "image": "/images/movie2.jpg",
+        "trailer": "trailer_link_2",
+        "description": "movies.shin2024.description",
+        "dangChieu": true
+      },
+      {
+        "id": 3,
+        "title": "movies.borderlands.title",
+        "image": "/images/movie3.jpg",
+        "trailer": "trailer_link_3",
+        "description": "movies.borderlands.description",
+        "dangChieu": true
+      },
+      {
+        "id": 4,
+        "title": "movies.revolver.title",
+        "image": "/images/movie4.jpg",
+        "trailer": "trailer_link_4",
+        "description": "movies.revolver.description",
+        "dangChieu": true
+      },
+      {
+        "id": 5,
+        "title": "movies.wrong_side.title",
+        "image": "/images/movie5.jpg",
+        "trailer": "trailer_link_5",
+        "description": "movies.wrong_side.description",
+        "dangChieu": true
+      },
+      {
+        "id": 6,
+        "title": "movies.amduongsu.title",
+        "image": "/images/movie6.jpg",
+        "trailer": "trailer_link_6",
+        "description": "movies.amduongsu.description",
+        "dangChieu": true
+      },
+      {
+        "id": 7,
+        "title": "movies.harold.title",
+        "image": "/images/movie7.jpg",
+        "trailer": "trailer_link_7",
+        "description": "movies.harold.description",
+        "dangChieu": true
+      },
+      {
+        "id": 8,
+        "title": "movies.romulus.title",
+        "image": "/images/movie8.jpg",
+        "trailer": "trailer_link_8",
+        "description": "movies.romulus.description",
+        "dangChieu": true
+      },
+      {
+        "id": 9,
+        "title": "movies.hai_muoi.title",
+        "image": "/images/movie9.jpg",
+        "trailer": "trailer_link_9",
+        "description": "movies.hai_muoi.description",
+        "sapChieu": true
+      },
+      {
+        "id": 10,
+        "title": "movies.pilot.title",
+        "image": "/images/movie10.jpg",
+        "trailer": "trailer_link_10",
+        "description": "movies.pilot.description",
+        "sapChieu": true
+      },
+      {
+        "id": 11,
+        "title": "movies.hellboy.title",
+        "image": "/images/movie11.jpg",
+        "trailer": "trailer_link_11",
+        "description": "movies.hellboy.description",
+        "sapChieu": true
+      },
+      {
+        "id": 12,
+        "title": "movies.wolf.title",
+        "image": "/images/movie12.jpg",
+        "trailer": "trailer_link_12",
+        "description": "movies.wolf.description",
+        "sapChieu": true
+      }
+    ],
+    "leftSmallBanners": [
+      {
+        "id": 1,
+        "image": "/images/left-banner.png"
+      }
+    ],
+    "rightSmallBanners": [
+      {
+        "id": 1,
+        "image": "/images/right-banner.png"
+      }
+    ],
+    "events": [
+      {
+        "id": 1,
+        "image": "/images/event1.jpg"
+      },
+      {
+        "id": 2,
+        "image": "/images/event2.png"
+      },
+      {
+        "id": 3,
+        "image": "/images/event3.png"
+      },
+      {
+        "id": 4,
+        "image": "/images/event4.png"
+      }
+    ],
+    "voucher":[
+      {
+        "id": 1,
+        "image": "/images/event5.png"
+      },
+      {
+        "id": 2,
+        "image": "/images/event6.png"
+      },
+      {
+        "id": 3,
+        "image": "/images/event7.png"
+      },
+      {
+        "id": 4,
+        "image": "/images/event8.png"
+      }
+    ],
+    "services": [
+      {
+        "id": 1,
+        "image": "/images/service1.jpg"
+      },
+      {
+        "id": 2,
+        "image": "/images/service2.png"
+      },
+      {
+        "id": 3,
+        "image": "/images/service3.png"
+      }
+    ],
+    "adBanner": {
+      "id": 1,
+      "image": "https://advserver.cgv.vn/www/images/2692342f3f032527245723b2617336a2.png"
+    },
+    "popupBanner": {
+      "id": 1,
+      "image": "/images/pop-up-banner.jpg"
+    },
+    "gifBanner": {
+      "id": 1,
+      "image": "/images/conanglitter_30_conan.gif"
+    }
+  }
+  
