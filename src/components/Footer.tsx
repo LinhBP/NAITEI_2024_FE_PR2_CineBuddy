@@ -173,10 +173,10 @@ export const Footer = () => {
             <h3 className="font-bold">{t("footer.cgv_company_name")}</h3>
             <p className="text-sm">
               {companyInfo.map((info, i) => (
-                <React.Fragment key={i}>
+                <>
                   {info}
                   <br />
-                </React.Fragment>
+                </>
               ))}
             </p>
           </div>
@@ -232,10 +232,10 @@ export const Footer = () => {
             <h3 className="font-bold">{t("footer.cgv_company_name")}</h3>
             <p className="text-sm leading-5">
               {companyInfo.map((info, i) => (
-                <React.Fragment key={i}>
+                <>
                   {info}
                   <br />
-                </React.Fragment>
+                </>
               ))}
             </p>
           </div>

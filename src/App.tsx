@@ -1,23 +1,18 @@
 import React from 'react';
-import { useTranslation } from 'react-i18next';
-import { Footer } from './components/Footer.tsx';
-import './index.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home.tsx';
+import Header from './components/Header.tsx';
+import Footer from './components/Footer.tsx';
 
 const App: React.FC = () => {
-  const { t, i18n } = useTranslation();
-
-  const changeLanguage = (lng: string) => {
-    i18n.changeLanguage(lng);
-  };
-
   return (
-    <div className="App">
-      <h1>{t('welcome')}</h1>
-      <button onClick={() => changeLanguage('en')}>{t('language.english')}</button>
-      <button onClick={() => changeLanguage('vi')}>{t('language.vietnamese')}</button>
-      {/* main */}
+    <Router>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
       <Footer />
-    </div>
+    </Router>
   );
 };
 

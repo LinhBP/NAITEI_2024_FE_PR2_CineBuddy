@@ -1,9 +1,5 @@
 {
     "welcome": "Hi",
-    "language": {
-    "english": "English",
-    "vietnamese": "Vietnamese"
-    },
     "footer": {
         "cgv_vietnam": "CGV Vietnam",
         "intro": "Introduction",
@@ -27,5 +23,102 @@
         "business_registration": "Business Registration Certificate: 0303675393, initially registered on July 31, 2008, issued by the Department of Planning and Investment of Ho Chi Minh City",
         "address": "Address: 2nd Floor, No. 7/28, Thanh Thai Street, Ward 14, District 10, Ho Chi Minh City, Vietnam",
         "copyright": "COPYRIGHT 2017 CJ CGV VIETNAM CO., LTD. ALL RIGHTS RESERVED"
+    },
+    "header": {
+        "menu": "Menu",
+        "now_showing": "Now Showing",
+        "coming_soon": "Coming Soon",
+        "new_and_promotion": "New & Promotions",
+        "my_tickets": "My Tickets",
+        "login_register": "Login / Register",
+        "hello": "Hello",
+        "logout": "Logout",
+        "film": "Movies",
+        "cinemas": "Cinemas",
+        "all_cinemas": "All Cinemas",
+        "special_cinemas": "Special Cinemas",
+        "3d_cinemas": "3D Cinemas",
+        "members": "Members",
+        "cgv_account": "CGV Account",
+        "benefits": "Benefits",
+        "cultureplex": "Cultureplex",
+        "online_store": "Online Store",
+        "rent_and_group": "Rent & Group",
+        "e_cgv": "E-CGV",
+        "egift": "EGift",
+        "cgv_rules": "CGV Rules",
+        "language": {
+            "english": "EN",
+            "vietnamese": "VI"
+        }
+    },
+    "movies": {
+      "mada": {
+        "title": "Mada",
+        "description": "A haunting journey into the depths of a mysterious swamp where fear meets courage."
+      },
+      "shin2024": {
+        "title": "Shin 2024",
+        "description": "Follow Shin in his latest adventure full of humor, wit, and unexpected twists."
+      },
+      "borderlands": {
+        "title": "Borderlands",
+        "description": "A gripping tale of survival in a post-apocalyptic world filled with danger and uncertainty."
+      },
+      "revolver": {
+        "title": "Revolver",
+        "description": "An intense drama that unravels the secrets behind a deadly game of survival."
+      },
+      "wrong_side": {
+        "title": "Wrong Side",
+        "description": "A comedic yet touching story about a man who always finds himself on the wrong side of things."
+      },
+      "amduongsu": {
+        "title": "Amduongsu",
+        "description": "A spiritual journey exploring the unknown realms of life and death."
+      },
+      "harold": {
+        "title": "Harold",
+        "description": "An enchanting story about a boy and his magical journey in an unknown world."
+      },
+      "romulus": {
+        "title": "Romulus",
+        "description": "A historical drama depicting the rise of one of Rome's greatest legends."
+      },
+      "hai_muoi": {
+        "title": "Hai Muoi",
+        "description": "A chilling thriller set in a remote village where nothing is as it seems."
+      },
+      "pilot": {
+        "title": "Pilot",
+        "description": "An exhilarating tale of a fighter pilot facing his toughest challenge yet."
+      },
+      "hellboy": {
+        "title": "Hellboy",
+        "description": "The legendary Hellboy returns for another epic battle between good and evil."
+      },
+      "wolf": {
+        "title": "Wolf",
+        "description": "A suspenseful thriller about a man transforming into a werewolf under a full moon."
+      }
+  },
+  "adBanner": {
+  "altText": "Ad Banner"
+  },
+  "home": {
+      "loading": "Loading...",
+      "popup_banner_alt": "Popup Banner",
+      "gif_banner_alt": "GIF Banner",
+      "left_banner_alt": "Left Small Banner {{id}}",
+      "right_banner_alt": "Right Small Banner {{id}}",
+      "banner_alt": "Banner {{id}}",
+      "movie_alt": "Movie {{title}}",
+      "view_details": "VIEW DETAILS",
+      "buy_ticket": "BUY TICKET",
+      "finger_icon_alt": "Finger Icon",
+      "cgv_members": "CGV Members",
+      "new_promotion": "New & Promotions",
+      "event_or_voucher_alt": "{{title}}",
+      "service_image_alt": "Service Image {{title}}"
     }
 }

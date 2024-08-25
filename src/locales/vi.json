@@ -1,9 +1,5 @@
 {
     "welcome": "Xin chào",
-    "language": {
-    "english": "Tiếng Anh",
-    "vietnamese": "Tiếng Việt"
-    },
     "footer": {
         "cgv_vietnam": "CGV Việt Nam",
         "intro": "Giới Thiệu",
@@ -27,5 +23,102 @@
         "business_registration": "Giấy Chứng nhận đăng ký doanh nghiệp: 0303675393 đăng ký lần đầu ngày 31/7/2008, được cấp bởi Sở Kế hoạch và Đầu tư Thành phố Hồ Chí Minh",
         "address": "Địa chỉ: Lầu 2, số 7/28, Đường Thành Thái, Phường 14, Quận 10, Thành phố Hồ Chí Minh, Việt Nam",
         "copyright": "COPYRIGHT 2017 CJ CGV VIETNAM CO., LTD. ALL RIGHTS RESERVED"
-    }
+    },
+    "header": {
+        "menu": "Menu",
+        "now_showing": "Phim Đang Chiếu",
+        "coming_soon": "Phim Sắp Chiếu",
+        "new_and_promotion": "Tin Mới và Ưu Đãi",
+        "my_tickets": "VÉ CỦA TÔI",
+        "login_register": "ĐĂNG NHẬP/ ĐĂNG KÝ",
+        "hello": "Xin Chào",
+        "logout": "Thoát",
+        "film": "Phim",
+        "cinemas": "Rạp",
+        "all_cinemas": "Tất Cả Các Rạp",
+        "special_cinemas": "Rạp Đặc Biệt",
+        "3d_cinemas": "Rạp 3D",
+        "members": "Thành Viên",
+        "cgv_account": "Tài Khoản CGV",
+        "benefits": "Quyền Lợi",
+        "cultureplex": "Cultureplex",
+        "online_store": "Quầy Online",
+        "rent_and_group": "Thuê Rạp & Vé Nhóm",
+        "e_cgv": "E-CGV",
+        "egift": "EGift",
+        "cgv_rules": "CGV Rules",
+        "language": {
+            "english": "EN",
+            "vietnamese": "VI"
+        }
+    },
+    "movies": {
+      "mada": {
+        "title": "Mada",
+        "description": "Một cuộc hành trình rùng rợn vào sâu trong đầm lầy bí ẩn nơi nỗi sợ hãi gặp lòng can đảm."
+      },
+      "shin2024": {
+        "title": "Shin 2024",
+        "description": "Theo chân Shin trong cuộc phiêu lưu mới nhất đầy hài hước, thông minh và những khúc quanh bất ngờ."
+      },
+      "borderlands": {
+        "title": "Borderlands",
+        "description": "Một câu chuyện sinh tồn hấp dẫn trong một thế giới hậu tận thế đầy nguy hiểm và bất định."
+      },
+      "revolver": {
+        "title": "Revolver",
+        "description": "Một bộ phim chính kịch căng thẳng khám phá những bí mật đằng sau trò chơi sinh tồn chết người."
+      },
+      "wrong_side": {
+        "title": "Sai Bên",
+        "description": "Một câu chuyện hài hước nhưng cảm động về một người đàn ông luôn đứng sai bên mọi việc."
+      },
+      "amduongsu": {
+        "title": "Âm Dương Sư",
+        "description": "Một hành trình tâm linh khám phá các cõi không rõ của sự sống và cái chết."
+      },
+      "harold": {
+        "title": "Harold",
+        "description": "Một câu chuyện kỳ diệu về một cậu bé và hành trình kỳ diệu của cậu trong một thế giới vô danh."
+      },
+      "romulus": {
+        "title": "Romulus",
+        "description": "Một bộ phim chính kịch lịch sử miêu tả sự trỗi dậy của một trong những huyền thoại vĩ đại nhất của Rome."
+      },
+      "hai_muoi": {
+        "title": "Hai Mươi",
+        "description": "Một bộ phim kinh dị rùng rợn diễn ra ở một ngôi làng hẻo lánh nơi mọi thứ không như vẻ ngoài."
+      },
+      "pilot": {
+        "title": "Phi Công",
+        "description": "Một câu chuyện hấp dẫn về một phi công chiến đấu đang đối mặt với thử thách khó khăn nhất của mình."
+      },
+      "hellboy": {
+        "title": "Hellboy",
+        "description": "Huyền thoại Hellboy trở lại với trận chiến hoành tráng giữa thiện và ác."
+      },
+      "wolf": {
+        "title": "Sói",
+        "description": "Một bộ phim ly kỳ về một người đàn ông biến thành sói dưới ánh trăng tròn."
+      }
+    },
+  "adBanner": {
+  "altText": "Biển quảng cáo"
+  },
+  "home": {
+      "loading": "Đang tải...",
+      "popup_banner_alt": "Biểu ngữ bật lên",
+      "gif_banner_alt": "Biểu ngữ GIF",
+      "left_banner_alt": "Biểu ngữ nhỏ bên trái {{id}}",
+      "right_banner_alt": "Biểu ngữ nhỏ bên phải {{id}}",
+      "banner_alt": "Biểu ngữ {{id}}",
+      "movie_alt": "Phim {{title}}",
+      "view_details": "XEM CHI TIẾT",
+      "buy_ticket": "MUA VÉ",
+      "finger_icon_alt": "Biểu tượng ngón tay",
+      "cgv_members": "Thành viên CGV",
+      "new_promotion": "Tin Mới & Ưu Đãi",
+      "event_or_voucher_alt": "{{title}}",
+      "service_image_alt": "Hình ảnh dịch vụ {{title}}"
+  }
 }
