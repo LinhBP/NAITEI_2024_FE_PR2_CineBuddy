@@ -221,5 +221,8 @@
         "email_invalid": "Vui lòng nhập đúng email",
         "password_required": "Mật khẩu không được bỏ trống"
       }
+    },
+    "showtimes": {
+      "no_showtimes": "Không có lịch chiếu"
     }
   }

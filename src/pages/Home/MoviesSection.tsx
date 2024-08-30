@@ -4,23 +4,22 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
-import { Movie } from "../../types/types.ts";
-import TicketButton from "../../components/TicketButton.tsx"; 
-import { NavigateFunction } from "react-router-dom";
+import { Movie } from "../../utils/api.ts"; // Correct import for Movie type
+import TicketButton from "../../components/TicketButton.tsx";
+import { useNavigate } from "react-router-dom"; // Import useNavigate
 import { useTranslation } from "react-i18next"; 
 
 interface MoviesSectionProps {
   movieList: Movie[];
-  navigate: NavigateFunction;
-  setModal: React.Dispatch<React.SetStateAction<boolean | null>>; 
+  setModal: React.Dispatch<React.SetStateAction<boolean | null>>;
 }
 
 const MoviesSection: React.FC<MoviesSectionProps> = ({
   movieList,
-  navigate,
-  setModal, 
+  setModal,
 }) => {
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
+  const navigate = useNavigate(); // Initialize useNavigate
 
   const nowShowingList = movieList.filter((movie) => movie.dangChieu);
 
@@ -76,7 +75,16 @@ const MoviesSection: React.FC<MoviesSectionProps> = ({
                     >
                       {t("home.view_details")}
                     </button>
-                    <TicketButton movieId={movie.id} setModal={setModal} />
+                    <TicketButton 
+                      movieId={movie.id} 
+                      setModal={setModal} // Pass setModal to TicketButton
+                    />
+                    <button
+                      className="flex items-center px-[8px] py-[7px] rounded-[5px] text-[13px] border-none cursor-pointer bg-blue-700 text-white hover:bg-blue-900"
+                      onClick={() => setModal(true)} // Trigger modal to open
+                    >
+                      {t("home.buy_ticket")}
+                    </button>
                   </div>
                 </div>
               </div>

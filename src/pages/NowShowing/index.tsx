@@ -1,20 +1,24 @@
-//src/pages/NowShowing/index.tsx
+// src/pages/NowShowing/index.tsx
 
 import React, { useEffect, useState } from 'react';
 import { fetchMovies, initializeLikes, toggleLike, Movie as APIMovie } from '../../utils/api.ts';
 import { useTranslation } from 'react-i18next';
 import BreadcrumbSection from './BreadcrumbSection.tsx';
-import MovieSlider from '../../components/MovieSlider.tsx'; // Import the new MovieSlider component
+import MovieSlider from '../../components/MovieSlider.tsx';
 import ShowtimeModal from '../../components/ShowtimeModal.tsx';
+import { useNavigate, useLocation } from 'react-router-dom'; // Import useLocation
 
 const NowShowing: React.FC = () => {
   const [movies, setMovies] = useState<APIMovie[]>([]);
   const [likes, setLikes] = useState<{ [key: number]: number }>({});
   const [hasLiked, setHasLiked] = useState<{ [key: number]: boolean }>({});
-  const [modal, setModal] = useState<boolean | null>(null); // State for modal
+  const [modal, setModal] = useState<boolean | null>(null);
+  const [selectedMovie, setSelectedMovie] = useState<number | null>(null);
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation(); // Get the current location
 
-  const isLoggedIn = true; // Replace with actual authentication logic
+  const isLoggedIn = false; // Replace with actual authentication logic
 
   useEffect(() => {
     const fetchData = async () => {
@@ -35,14 +39,22 @@ const NowShowing: React.FC = () => {
     setLikes((prev) => ({ ...prev, [id]: newLikesCount }));
   };
 
+  const handleOpenModal = (movieId: number) => {
+    if (!isLoggedIn) {
+      // Pass current location to login page using state
+      navigate('/login', { state: { from: location } });
+      return;
+    }
+
+    setSelectedMovie(movieId);
+    setModal(true);
+  };
+
   return (
     <div>
-      {/* Breadcrumb */}
       <BreadcrumbSection />
 
-      {/* Now Showing Section */}
       <div className="container mx-auto mt-8 px-4 lg:px-0 max-w-[980px]">
-        {/* Header */}
         <div className="flex items-end justify-between border-b-2 border-black pb-2 mb-5">
           <a href="/coming-soon" className="text-[20px] text-[#333] cursor-pointer">
             {t('now_showing.coming_soon')}
@@ -52,21 +64,19 @@ const NowShowing: React.FC = () => {
           </h1>
         </div>
 
-        {/* Movie Slider */}
         <MovieSlider
           movies={movies}
-          filterCondition={(movie) => movie.dangChieu} // Filter for now showing movies
+          filterCondition={(movie) => movie.dangChieu}
           hasLiked={hasLiked}
           likes={likes}
           onLike={handleLike}
-          setModal={setModal}
+          setModal={handleOpenModal}
         />
       </div>
 
-      {/* Show Modal if triggered */}
-      {modal && (
+      {modal && selectedMovie !== null && (
         <ShowtimeModal
-          movieId={1} // Replace with actual selected movie ID
+          movieId={selectedMovie}
           modal={modal}
           setModal={setModal}
         />

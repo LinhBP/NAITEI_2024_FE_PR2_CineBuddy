@@ -221,5 +221,8 @@
         "email_invalid": "Please enter a valid email",
         "password_required": "Password cannot be empty"
       }
+    },
+    "showtimes": {
+      "no_showtimes": "No showtimes available"
     }
   }

@@ -16,7 +16,7 @@ interface MovieSliderProps {
   hasLiked: { [key: number]: boolean };
   likes: { [key: number]: number };
   onLike: (id: number) => void;
-  setModal: React.Dispatch<React.SetStateAction<boolean | null>>;
+  setModal: (movieId: number) => void; // Updated to receive a function with movieId
 }
 
 const MovieSlider: React.FC<MovieSliderProps> = ({
@@ -51,7 +51,7 @@ const MovieSlider: React.FC<MovieSliderProps> = ({
             hasLiked={hasLiked[movie.id]}
             likes={likes[movie.id]}
             onLike={onLike}
-            setModal={setModal}
+            setModal={() => setModal(movie.id)} // Set modal with movie ID
           />
         </SwiperSlide>
       ))}

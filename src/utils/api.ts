@@ -1,4 +1,4 @@
-// api.ts
+// src/utils/api.ts
 
 export interface Movie {
   rated: string;
@@ -15,6 +15,16 @@ export interface Movie {
   like_number: number;
   rating?: number; 
   language?: string; 
+}
+
+export interface Showtime {
+  id: number;
+  movieId: number;
+  city: string;
+  cinemaName: string;
+  movieType: string;
+  date: string;
+  showtimes: { id: number; time: string }[];
 }
 
 const MOVIE_LIKES_KEY = 'movieLikes';
@@ -40,23 +50,40 @@ export const fetchMovieDetails = async (id: number): Promise<Movie | undefined> 
   return movie;
 };
 
+// Fetch movie showtimes by movie ID, city, date, and type from the API
+export const fetchMovieShowtimes = async (movieId: number, date?: string, city?: string, type?: string): Promise<Showtime[]> => {
+  let url = `${process.env.REACT_APP_API_HOST}/showtimes?movieId=${movieId}`;
+  if (date) url += `&date=${date}`;
+  if (city) url += `&city=${city}`;
+  if (type) url += `&type=${type}`;
+
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error('Failed to fetch movie showtimes');
+    }
+    const showtimes: Showtime[] = await response.json();
+    return showtimes;
+  } catch (error) {
+    console.error('Error fetching movie showtimes:', error);
+    return [];
+  }
+};
+
 // Initialize like state from localStorage or default values
 export const initializeLikes = (movies: Movie[], isLoggedIn: boolean): { likes: { [key: number]: number }, hasLiked: { [key: number]: boolean } } => {
   const likes: { [key: number]: number } = {};
   const hasLiked: { [key: number]: boolean } = {};
 
-  // Load likes from local storage if user is logged in
   if (isLoggedIn) {
     const savedLikes = JSON.parse(localStorage.getItem(MOVIE_LIKES_KEY) || '{}');
     const likedMovies = JSON.parse(localStorage.getItem(LIKED_MOVIES_KEY) || '{}');
 
-    // Initialize like and hasLiked state from local storage or set defaults from fetched movies
     movies.forEach(movie => {
       likes[movie.id] = savedLikes[movie.id] ?? movie.like_number;
       hasLiked[movie.id] = likedMovies[movie.id] ?? false;
     });
   } else {
-    // Set defaults from fetched movies if user is not logged in
     movies.forEach(movie => {
       likes[movie.id] = movie.like_number;
       hasLiked[movie.id] = false;
@@ -68,14 +95,12 @@ export const initializeLikes = (movies: Movie[], isLoggedIn: boolean): { likes: 
 
 // Update like count for a movie and sync with local storage and backend
 export const updateLikeCount = (movieId: number, newLikeCount: number, isLoggedIn: boolean): void => {
-  // Update the like count in local storage if user is logged in
   if (isLoggedIn) {
     const likes = JSON.parse(localStorage.getItem(MOVIE_LIKES_KEY) || '{}');
     likes[movieId] = newLikeCount;
     localStorage.setItem(MOVIE_LIKES_KEY, JSON.stringify(likes));
   }
 
-  // Sync the like count with the backend
   syncLikeCountWithBackend(movieId, newLikeCount);
 };
 
@@ -99,7 +124,6 @@ export const toggleLike = (movieId: number, currentHasLiked: boolean, likes: { [
   const newHasLiked = !currentHasLiked;
   const newLikesCount = newHasLiked ? likes[movieId] + 1 : likes[movieId] - 1;
 
-  // Update like state in local storage if user is logged in
   if (isLoggedIn) {
     const likedMovies = JSON.parse(localStorage.getItem(LIKED_MOVIES_KEY) || '{}');
     likedMovies[movieId] = newHasLiked;
@@ -109,7 +133,6 @@ export const toggleLike = (movieId: number, currentHasLiked: boolean, likes: { [
     localStorage.setItem(MOVIE_LIKES_KEY, JSON.stringify(updatedLikes));
   }
 
-  // Update like count and sync with backend
   updateLikeCount(movieId, newLikesCount, isLoggedIn);
 
   return { newHasLiked, newLikesCount };

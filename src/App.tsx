@@ -10,6 +10,7 @@ import ComingSoon from './pages/ComingSoon/index.tsx';
 import MovieDetail from './pages/MovieDetail/index.tsx';
 import Login from './pages/UserAccess/Login.tsx';
 import Register from './pages/UserAccess/Register.tsx';
+import BookingTicket from './pages/Booking/BookingTicket.tsx'; // Import the new BookingTicket component
 
 const App: React.FC = () => {
   return (
@@ -22,6 +23,7 @@ const App: React.FC = () => {
         <Route path="/movie-detail/:id" element={<MovieDetail />} />
         <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/booking/:movieId/:showtimeId" element={<BookingTicket />} /> {/* Add the booking route */}
       </Routes>
       <Footer />
     </Router>

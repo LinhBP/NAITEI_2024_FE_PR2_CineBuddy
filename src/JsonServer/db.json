@@ -1,33 +1,12 @@
 {
   "banners": [
-    {
-      "id": 1,
-      "image": "/images/banner1.png"
-    },
-    {
-      "id": 2,
-      "image": "/images/banner2.jpg"
-    },
-    {
-      "id": 3,
-      "image": "/images/banner3.jpg"
-    },
-    {
-      "id": 4,
-      "image": "/images/banner4.jpg"
-    },
-    {
-      "id": 5,
-      "image": "/images/banner5.jpg"
-    },
-    {
-      "id": 6,
-      "image": "/images/banner6.jpg"
-    },
-    {
-      "id": 7,
-      "image": "/images/banner7.jpg"
-    }
+    { "id": 1, "image": "/images/banner1.png" },
+    { "id": 2, "image": "/images/banner2.jpg" },
+    { "id": 3, "image": "/images/banner3.jpg" },
+    { "id": 4, "image": "/images/banner4.jpg" },
+    { "id": 5, "image": "/images/banner5.jpg" },
+    { "id": 6, "image": "/images/banner6.jpg" },
+    { "id": 7, "image": "/images/banner7.jpg" }
   ],
   "movies": [
     {
@@ -200,66 +179,27 @@
     }
   ],
   "leftSmallBanners": [
-    {
-      "id": 1,
-      "image": "/images/left-banner.png"
-    }
+    { "id": 1, "image": "/images/left-banner.png" }
   ],
   "rightSmallBanners": [
-    {
-      "id": 1,
-      "image": "/images/right-banner.png"
-    }
+    { "id": 1, "image": "/images/right-banner.png" }
   ],
   "events": [
-    {
-      "id": 1,
-      "image": "/images/event1.jpg"
-    },
-    {
-      "id": 2,
-      "image": "/images/event2.png"
-    },
-    {
-      "id": 3,
-      "image": "/images/event3.png"
-    },
-    {
-      "id": 4,
-      "image": "/images/event4.png"
-    }
+    { "id": 1, "image": "/images/event1.jpg" },
+    { "id": 2, "image": "/images/event2.png" },
+    { "id": 3, "image": "/images/event3.png" },
+    { "id": 4, "image": "/images/event4.png" }
   ],
   "voucher": [
-    {
-      "id": 1,
-      "image": "/images/event5.png"
-    },
-    {
-      "id": 2,
-      "image": "/images/event6.png"
-    },
-    {
-      "id": 3,
-      "image": "/images/event7.png"
-    },
-    {
-      "id": 4,
-      "image": "/images/event8.png"
-    }
+    { "id": 1, "image": "/images/event5.png" },
+    { "id": 2, "image": "/images/event6.png" },
+    { "id": 3, "image": "/images/event7.png" },
+    { "id": 4, "image": "/images/event8.png" }
   ],
   "services": [
-    {
-      "id": 1,
-      "image": "/images/service1.jpg"
-    },
-    {
-      "id": 2,
-      "image": "/images/service2.png"
-    },
-    {
-      "id": 3,
-      "image": "/images/service3.png"
-    }
+    { "id": 1, "image": "/images/service1.jpg" },
+    { "id": 2, "image": "/images/service2.png" },
+    { "id": 3, "image": "/images/service3.png" }
   ],
   "adBanner": {
     "id": 1,
@@ -272,5 +212,151 @@
   "gifBanner": {
     "id": 1,
     "image": "/images/conanglitter_30_conan.gif"
-  }
+  },
+  "showtimes": [
+    {
+      "id": 1,
+      "movieId": 1,
+      "city": "Hồ Chí Minh",
+      "cinemaName": "CGV Hùng Vương Plaza",
+      "movieType": "2D",
+      "date": "05-09-2024",
+      "showtimes": [
+        { "id": 1, "time": "08:10 AM" },
+        { "id": 2, "time": "10:40 AM" },
+        { "id": 3, "time": "01:10 PM" },
+        { "id": 4, "time": "03:40 PM" },
+        { "id": 5, "time": "06:10 PM" },
+        { "id": 6, "time": "08:40 PM" }
+      ]
+    },
+    {
+      "id": 2,
+      "movieId": 1,
+      "city": "Hồ Chí Minh",
+      "cinemaName": "CGV Crescent Mall",
+      "movieType": "2D",
+      "date": "05-09-2024",
+      "showtimes": [
+        { "id": 7, "time": "09:00 AM" },
+        { "id": 8, "time": "11:30 AM" },
+        { "id": 9, "time": "02:00 PM" },
+        { "id": 10, "time": "04:30 PM" },
+        { "id": 11, "time": "07:00 PM" },
+        { "id": 12, "time": "09:30 PM" }
+      ]
+    },
+    {
+      "id": 3,
+      "movieId": 1,
+      "city": "Hồ Chí Minh",
+      "cinemaName": "CGV Thảo Điền Pearl",
+      "movieType": "2D",
+      "date": "05-09-2024",
+      "showtimes": [
+        { "id": 13, "time": "09:30 AM" },
+        { "id": 14, "time": "12:00 PM" },
+        { "id": 15, "time": "02:30 PM" },
+        { "id": 16, "time": "05:00 PM" },
+        { "id": 17, "time": "07:30 PM" },
+        { "id": 18, "time": "10:00 PM" }
+      ]
+    },
+    {
+      "id": 4,
+      "movieId": 1,
+      "city": "Hà Nội",
+      "cinemaName": "CGV Vincom Center Bà Triệu",
+      "movieType": "2D",
+      "date": "05-09-2024",
+      "showtimes": [
+        { "id": 19, "time": "08:00 AM" },
+        { "id": 20, "time": "10:30 AM" },
+        { "id": 21, "time": "01:00 PM" },
+        { "id": 22, "time": "03:30 PM" },
+        { "id": 23, "time": "06:00 PM" },
+        { "id": 24, "time": "08:30 PM" }
+      ]
+    },
+    {
+      "id": 5,
+      "movieId": 2,
+      "city": "Hà Nội",
+      "cinemaName": "CGV Hồ Gươm Plaza",
+      "movieType": "3D",
+      "date": "05-09-2024",
+      "showtimes": [
+        { "id": 25, "time": "09:00 AM" },
+        { "id": 26, "time": "11:30 AM" },
+        { "id": 27, "time": "02:00 PM" },
+        { "id": 28, "time": "04:30 PM" },
+        { "id": 29, "time": "07:00 PM" },
+        { "id": 30, "time": "09:30 PM" }
+      ]
+    },
+    {
+      "id": 6,
+      "movieId": 2,
+      "city": "Hà Nội",
+      "cinemaName": "CGV Aeon Long Biên",
+      "movieType": "IMAX",
+      "date": "05-09-2024",
+      "showtimes": [
+        { "id": 31, "time": "08:30 AM" },
+        { "id": 32, "time": "11:00 AM" },
+        { "id": 33, "time": "01:30 PM" },
+        { "id": 34, "time": "04:00 PM" },
+        { "id": 35, "time": "06:30 PM" },
+        { "id": 36, "time": "09:00 PM" }
+      ]
+    },
+    {
+      "id": 7,
+      "movieId": 1,
+      "city": "Đà Nẵng",
+      "cinemaName": "CGV Vĩnh Trung Plaza",
+      "movieType": "2D",
+      "date": "05-09-2024",
+      "showtimes": [
+        { "id": 37, "time": "08:15 AM" },
+        { "id": 38, "time": "10:45 AM" },
+        { "id": 39, "time": "01:15 PM" },
+        { "id": 40, "time": "03:45 PM" },
+        { "id": 41, "time": "06:15 PM" },
+        { "id": 42, "time": "08:45 PM" }
+      ]
+    },
+    {
+      "id": 8,
+      "movieId": 1,
+      "city": "Đà Nẵng",
+      "cinemaName": "CGV Vincom Đà Nẵng",
+      "movieType": "3D",
+      "date": "05-09-2024",
+      "showtimes": [
+        { "id": 43, "time": "09:10 AM" },
+        { "id": 44, "time": "11:40 AM" },
+        { "id": 45, "time": "02:10 PM" },
+        { "id": 46, "time": "04:40 PM" },
+        { "id": 47, "time": "07:10 PM" },
+        { "id": 48, "time": "09:40 PM" }
+      ]
+    },
+    {
+      "id": 9,
+      "movieId": 1,
+      "city": "Đà Nẵng",
+      "cinemaName": "CGV Vincom Đà Nẵng",
+      "movieType": "IMAX",
+      "date": "05-09-2024",
+      "showtimes": [
+        { "id": 49, "time": "08:45 AM" },
+        { "id": 50, "time": "11:15 AM" },
+        { "id": 51, "time": "01:45 PM" },
+        { "id": 52, "time": "04:15 PM" },
+        { "id": 53, "time": "06:45 PM" },
+        { "id": 54, "time": "09:15 PM" }
+      ]
+    }
+  ]
 }
